@@ -10,7 +10,7 @@ import { Skills } from "./components/skills/Skills";
 import { Phrase } from "./components/info";
 
 
-export const App = () => {
+ const App = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
 
    const handleScroll = () => {
@@ -38,5 +38,7 @@ export const App = () => {
       </section>      
     </div>
   );
-}
+};
+
+export default App;
 
