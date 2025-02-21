@@ -5,7 +5,7 @@ import gifExper from './img/gifExpertApp.PNG';
 import heroesSpa from './img/heroesSpaMain.PNG';
 
 
-export const imagenes={
+export const imagenes = {
     imgTabla:tabla,
     imgCali: califi,
     imgEstil: estilos,

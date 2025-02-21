@@ -36,7 +36,10 @@ export const Slides = slidesInfo.map((slide) => (
   <div className="slide-container">
     <img src={slide.src} alt={slide.alt} />
     <div className="slide-desc">
-      <span>{slide.desc}</span>
+      <span>{ slide.desc }</span>
+      <a href="https://github.com/StrengTower90?tab=repositories" target="_blank" rel="noreferrer">
+         <i className="fab fa-github github"></i>
+       </a> 
     </div>
   </div>
 ));

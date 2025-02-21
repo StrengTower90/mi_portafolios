@@ -1,0 +1,54 @@
+.about_blood--1{
+    width: 70rem;
+    position: absolute;
+    top: -10rem;
+    left: 30rem;
+    transform: rotate(90deg);
+}
+
+.about_blood--2{
+    width: 70rem;
+    position: absolute;
+    top: 35rem;
+    left: 0;
+    transform: rotate(190deg);
+}
+
+.about_blood--3{
+    width: 70rem;
+    position: absolute;
+    top: 70rem;
+    right: 5rem;
+    transform: rotate(90deg);
+}
+
+/* .about_background{
+    width: 15rem;
+    position: absolute;
+    top: 15%;
+    left: 0;
+} */
+
+.about_background--1{
+    width: 100%;
+    position: absolute;
+    top: -10rem;
+    left: -60%;
+    transform: rotate(80deg);
+}
+
+.about_background--2{
+    width: 100%;
+    position: absolute;
+    top: 18rem;
+    right: -70rem;
+    transform: rotate(80deg);
+}
+
+.about_background--3{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: -60%;
+    transform: rotate(80deg);
+}

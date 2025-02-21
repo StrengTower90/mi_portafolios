@@ -1,86 +1,192 @@
-.carousel-container {
-    display: flex;
-    vertical-align: center;
-    align-items: center;
-    background-color: black;
-    padding: 30px 0 30px 0;
-  }
+:root {
+  --primary-color: #2a8776;
+  --secundary-color: #f2f1ed;
+  --fourth-color: #dad9d6;
+  --text-color: #fff;
+}
+
+.container{
+  /* width: 88%; */
+  width: 100%;
   
-  .carousel-title {
-    color: white;
-    width: 40%;
-    text-align: center;
-    font-size: 30px;
-    padding: 0 100px 0 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  position: relative;
+  background-color: var( --primary-color );
+  gap: 3rem;
+}
+
+.slide_background{
+  /* background-color: rgba(0, 0, 0, 0.306); */
+  /* z-index: 1; */
+  gap: 10rem;
+}
+
+.container > hr {
+  width: 100%;
+  z-index: 1;
+}
+
+
+.carousel-title {
+  width: 25rem;
+  height: 04rem;
+  box-sizing: border-box;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  z-index: 1;
+  }
+
+.carousel-container {
+    /* width: 98%; */
+    width: 100%;
+    object-fit: scale-down;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 60px;
+    /* gap: 10px; */
+    /* background-color: #083D77; */
+    /* background-color: #083D77; */
+    /* background-color: #08bdbab0;b */
+     /* background-color: #000; */
+    /* background-color: rgba(255, 255, 255, 0.443); */
+    background-color: rgba(0, 0, 0, 0.564);
+    z-index: 1;
+  }
+
+  
+
+  .carousel-title > h1{
+    color: var( --text-color );
+    font-size: 40px;
   }
 
   .carousel-inner {
     width: 100%;
-    padding-top: 50px ;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
- .github {
-  color: white;
-  font-size: 40px;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  border-bottom: 4px solid transparent;
+
+  /* .carousel-inner > a{ */
+    /* width: 150px; */
+    /* height: 60px; */
+    /* background-color: #fff; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-radius: 50px; */
+   /* } */
+
+ .git--button{
+  background-color: #fff;
+  width: 90px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
  }
 
+ .github {
+  color: var( --text-color );
+  font-size: 3rem;
+  /* padding-bottom: 10px; */
+  /* border-bottom: 4px solid transparent; */
+ }
+
+
 .github:hover {
-  border-color: white;
+  border-color: #222222e7;
+  transform: scale( 1.2 );
   transition: all 0.3s ease-out;
 }
   
   .slide-container {
-    height: 80%;
-    border-radius: 40px;
+    height: 70%;
+    box-sizing: border-box;
+    background-color: var( --text-color );
+    border-radius: 20px;
+    outline: 3px solid var( --text-color );
+    box-shadow: 1px 1px 6px #222222;
     overflow: hidden;
     position: relative;
     cursor: pointer;
   }
   
   .slide-container > img {
-    object-fit: contain;
+    width: 100%;
+    object-fit: scale-down;
     transition: all 0.2s ease-in-out;
   }
   
   .slide-container:hover > img {
-    transform: scale(1.2);
+    transform: scale( 1.2 );
     opacity: 0.7;
+    display: flex;
+    align-items: center;
   }
   
   .slide-desc {
-    background-color: black;
+    background-color: #222222d7;
     position: absolute;
     bottom: 0;
     right: 0;
     width: 70%;
     padding-left: 30px;
     border-top-left-radius: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
   }
   
   .slide-desc > span {
-    color: white;
+    color: var( --text-color );
     display: block;
     font-size: 22px;
     padding: 20px 0 20px 10px;
   }
   
+  /* .BrainhubCarousel__container {
+     outline: 3px solid #083D77;
+     object-fit: scale-down;
+     padding-top: 0%;
+     padding-bottom: 0% !important;
+  } */
+
+  .BrainhubCarousel{
+    padding-top: 0;
+    height: 600px;
+    /* border-radius: 25px; */
+    /* box-shadow: 6px 1px 6px #222222; */
+ }
+
   .BrainhubCarousel__arrows {
-    background-color: white;
+    width: 100px;
+    background-color: #0a66c2;
     border-radius: 50%;
     margin: 20px;
   }
   
   .BrainhubCarousel__arrows > span {
-    border-color: black;
+    border-color: #fff;
   }
   
   .BrainhubCarousel__arrows:hover {
-    background-color: white !important;
+    background-color: transparent !important;
   }
   
   .BrainhubCarousel__arrows:hover > span {
@@ -89,16 +195,23 @@
   
   @media only screen and (max-width: 960px) {
     .carousel-container {
-      flex-direction: column;
+      /* flex-direction: column; */
+      padding: 2 0;
+      display: grid;
+      grid-template-rows: 0.2fr 0.9fr;
+      padding: auto;
     }
   
     .carousel-title {
       width: 100%;
       text-align: center;
-      padding: 50px 0 50px 0;
+      box-sizing: border-box;
+      padding: 10px 0 10px 0;
+      /* background-color: blueviolet; */
     }
   
     .slide-container {
       width: 100%;
+      height: 65%;
     }
   }

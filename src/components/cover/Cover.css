@@ -1,42 +1,134 @@
+.heroe_container {
+  height: 100vh;
+  /* overflow: hidden; */
+  /* box-sizing: border-box; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #178CA4; */
+  background-color: #2a8776;
+  z-index: 1;
+}
+
 .cover-container {
-    height: 100vh;
-    width: 100%;
-    object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .video {
+  /* width: 100%; */
+  flex-basis: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* background-attachment: fixed; */
+}
+
+/* .video {
     object-fit: cover;
     width: 100%;
     height: 100vh;
     position: absolute;
     z-index: -1;
-  }
-  
-  .cover-container > h1 {
-    color: white;
-    font-size: 100px;
-  }
-  
-  .cover-container > p {
-    margin-top: 8px;
-    color: white;
-    font-size: 32px;
+  } */
+
+.cover_title {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 10rem;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.cover_title>h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+.cover_title>p {
+  margin-top: 8px;
+  color: white;
+  font-size: 32px;
+}
+
+.cover_img {
+  filter: brightness(1.2);
+  mix-blend-mode: multiply;
+  width: 50%;
+  /* display: inherit; */
+  margin-top: 500px;
+  object-fit: cover;
+  /* background-color: #30505c; */
+  margin: auto 0 0 0;
+  z-index: 2;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  transform: rotateY(180deg);
+}
+
+.cover_bloud {
+  width: 90rem;
+  position: absolute;
+  top: -40rem;
+  left: -20rem;
+  transform: rotateX(50deg);
+}
+
+.cover_bloud--right {
+  width: 70rem;
+  position: absolute;
+  top: -10rem;
+  right: -40rem;
+  transform: rotateX(30deg);
+}
+
+@media screen and (max-width: 960px) {
+  .heroe_container{
+    height: 90vh;
   }
 
-  @media screen and (max-width: 960px){
-    .cover-container > h1 {
-      font-size: 70px;
-      text-align: center;
-    }
-
-    .cover-container > p {
-      text-align: center;
-      font-size: 22px;
-      width: 85%;
-    }
+  .cover-container {
+    justify-content: center;
   }
+
+  .cover_title {
+    margin: 10rem 2rem 0 2rem;
+    flex-basis: 100%;
+    /* outline: 1px solid black; */
+  }
+
+  .cover_title>h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .cover_title>p {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .cover_img {
+    display: none;
+  }
+
+  .cover_bloud{
+    width: 30rem;
+  }
+
+  .cover_bloud--right {
+    width: 40rem;
+    top: -10rem;
+    right: -20rem;
+  }
+
+.wave{
+  bottom: -8.5rem;
+}
+
+}

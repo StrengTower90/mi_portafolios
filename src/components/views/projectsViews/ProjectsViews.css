@@ -1,0 +1,17 @@
+
+
+.project_bloud--left{
+    position: absolute;
+    width: 90rem;
+   top: -50rem;
+   left: -35rem;
+   transform: rotate(50deg);
+}
+
+.project_bloud--right{
+    position: absolute;
+    width: 90rem;
+   top: 6rem;
+   right: -35rem;
+   transform: rotate(50deg);
+}

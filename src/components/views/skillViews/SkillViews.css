@@ -1,0 +1,32 @@
+
+
+.middle_bloud--left{
+    position: absolute;
+    width: 90rem;
+   top: -50rem;
+   left: -35rem;
+   transform: rotate(50deg);
+}
+
+.middle_bloud--right{
+    position: absolute;
+    width: 90rem;
+   top: 6rem;
+   right: -35rem;
+   transform: rotate(50deg);
+}
+
+.middle_bloud--bottom-left{
+    position: absolute;
+    width: 50rem;
+    bottom: 40rem;
+    right: 0;
+}
+
+.middle_bloud--left-down{
+    position: absolute;
+    width: 70rem;
+    top: 20%;
+    left: -10rem;
+}
+

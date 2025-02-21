@@ -2,6 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;  
+  scroll-behavior: smooth;
+  scroll-margin: 40px;
 }
+
+/* .section__container{ */
+  /* background-color: #083D77; */
+  /* background-color: #039be5; */
+  /* background-color: #1a73e8; */
+  /* background-color: #b14d34; */
+  /* background-color: #f57c00; */
+  /* z-index: 1; */
+/* } */
+:root {
+  --primary-color: #2a8776;
+  --secundary-color: #f2f1ed;
+  --fourth-color: #dad9d6;
+  --test-color: #08bdbab0;
+}
+
+
+.App{
+  position: relative;
+   /* background-color: #30505c; */
+   /* background-color: #072A40; */
+   /* background-color: #18B7BE; */
+   /* background-color: #FFF9E9; */
+   /* background-color: #0099ff; */
+   /* background-color: #00cba9; */
+  /* background-color: #fff; */
+  /* background-color: #1967d2; */
+  /* background-color: ; */
+  /* background-color: #691fed; */
+  /* background-color: var(--secundary-color); */
+  /* background: linear-gradient( to bottom, var( --secundary-color )30%, var( --third-color ) 50%); */
+  /* background-color: var(--secundary-color); */
+  /* background-image: url(../src/assets/svg/code-climate.svg);
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  background-position: 5rem 50rem; */
+  overflow: hidden;
+}
+
+
+.middle_container{
+  position: relative;
+  overflow: hidden;
+  
+}
+
     

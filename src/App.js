@@ -6,6 +6,9 @@ import { About } from "./components/about/About";
 import { Slider } from "./components/slider/Slider";
 import { Info } from "./components/info/Info";
 import { Footer } from "./components/footer/Footer";
+import { Skills } from "./components/skills/Skills";
+import { Phrase } from "./components/info";
+
 
 export const App = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -23,10 +26,16 @@ export const App = () => {
     <div className="App">
       <Navbar isScrolling={scrollHeight} />
       <Cover />
-      <About />
-      <Slider />
-      <Info />
-      <Footer />
+      <section className="section__container">
+        <About />
+        <section className="middle_container">
+          <Skills />
+          <Phrase />   
+          <Slider />
+          <Info />
+          <Footer />          
+        </section>            
+      </section>      
     </div>
   );
 }
