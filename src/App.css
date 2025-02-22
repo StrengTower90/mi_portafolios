@@ -25,8 +25,8 @@
 
 .App{
   position: relative;
-   background-color: #30505c;
-   background-color: #072A40;
+   background-color: #30505c !important;
+   /* background-color: #072A40; */
    /* background-color: #18B7BE;
    /* background-color: #FFF9E9; */
    /* background-color: #0099ff; */
@@ -36,9 +36,9 @@
   /* background-color: ; 
   /* background-color: #691fed;
   background-color: var(--secundary-color); */
-  background: linear-gradient( to bottom, var( --secundary-color )30%, var( --third-color ) 50%); 
-  background-color: var(--secundary-color);
-  background-image: url(../src/assets/svg/code-climate.svg);
+  /* background: linear-gradient( to bottom, var( --secundary-color )30%, var( --third-color ) 50%);  */
+  /* background-color: var(--secundary-color); */
+  /* background-image: url(../src/assets/svg/code-climate.svg); */
   background-repeat: no-repeat;
   background-size: 5rem;
   background-position: 5rem 50rem;

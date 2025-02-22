@@ -16,16 +16,16 @@ export const Cover = () => {
      <div className="cover-container">
         {/* <video className="video" src={coverVideo} autoPlay loop muted /> */}
         <div className="cover_title">
-          <h1>Ing. Luis Manuel</h1>
+          <h1>Luis Manuel</h1>
           <h1> Escalante Coronado</h1>
-          <p>Desarrollador | Diseñador | Creador de contenido | Emprendedor</p>
+          <p>Desarrollador FullStack</p>
           {/* <p>& | Emprendedor </p> */}
         </div>
         {/* <img src="https://media.giphy.com/media/YSqfSiVCSrF5vpXR8J/giphy.gif"/> */}
-        <img src={ coverImg } className="cover_img"/>
+        <img src={ coverImg } className="cover_img" alt="Cover"/>
      </div>
     {/* <div className="cover_wave"> */}
-      <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#f2f1ed" fill-opacity="1" d="M0,160L40,138.7C80,117,160,75,240,64C320,53,400,75,480,101.3C560,128,640,160,720,186.7C800,213,880,235,960,250.7C1040,267,1120,277,1200,272C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      {/* <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#f2f1ed" fillOpacity="1" d="M0,160L40,138.7C80,117,160,75,240,64C320,53,400,75,480,101.3C560,128,640,160,720,186.7C800,213,880,235,960,250.7C1040,267,1120,277,1200,272C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg> */}
     {/* </div>     */}
     </header>   
         

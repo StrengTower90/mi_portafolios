@@ -12,7 +12,8 @@ export const Navbar = ({ isScrolling }) => {
    const { toTheTop } =  ScrollThem();
    
     useEffect(() => {
-     SetShowMenu()
+      console.log("I'm in the Navbar component");
+     SetShowMenu();
     }, [])
     
 

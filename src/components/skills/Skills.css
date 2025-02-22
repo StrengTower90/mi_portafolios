@@ -10,24 +10,19 @@
     width: 100%;
     position: relative;
     background-color: var( --primary-color );
-    /* margin-top: 16rem; */
-    /* gap: 100rem; */
     padding-bottom: 5rem;
     overflow: hidden;
 }
 
 .skill__container{
-    width: 80%;
-    /* position: relative; */
+    max-width: 90%;
     padding-bottom: 20px;
     margin: 0 auto;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    /* background-color: #FFF; */
     color: #424242;
-    /* box-shadow: 1px 1px 3px #222222; */
-    gap: 30px;
+    /* gap: 30px; */
     position: relative;
     
 }
@@ -35,60 +30,120 @@
 .skill__templates{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
     align-content: center;
-    /* justify-items: end; */
-    /* overflow: hidden; */
 }
 
 
 .skill_title{
-    width: 25rem;
-    height: 04rem;
+    width: 80%;
+    /* height: 25rem; */
     box-sizing: border-box;
-    margin-top: 50px;
-    margin-bottom: 30px ;
+    padding: 3rem;
     display: flex;  
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 15px;
     color: var( --skill-text-color );
-    z-index: 2;
+    /* z-index: 2; */
 }
 .skill_title > h1 {
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .skill___item{
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: #fff;
-    box-shadow: 1px 1px 3px #222222;
-    border-radius: 50px;
-    z-index: 2;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    /* z-index: 2; */
 }
 
-.skill___item> img{
-    object-fit: cover;
-    width: 30%;
-    /* height: 50%; */
-}
-.skill___item> h4{
-    font-size: 2rem;
-    /* height: 50%; */
-}
 .skill___item > img{
-    border-radius: 50%;
+    width: 50px;
+    max-width: 35%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    /* object-fit: cover;
+    width: 30%; */
+    /* height: 50%; */
+}
+.skill___item > h4{
+    font-size: 1.2rem;
+    /* height: 50%; */
 }
 
-.item__6 > img{
+@media (max-width: 1024px) {
+    .skill__templates {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .skill___item {
+        height: 20vh;
+    }
+    
+    .skill_title > h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill__templates {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .skill___item > h1 {
+        font-size: 24px;
+    }
+
+    .skill___item {
+        height: 18vh;
+    }
+
+    .skill___item > h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill__templates {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px
+    }
+
+    .skill_title > h1 {
+        font-size: 20px;
+    }
+
+    .skill___item {
+        height: 15vh;
+        border-radius: 20px;
+    }
+
+    .skill___item > img {
+        width: 40px;
+    }
+
+    .skill___item > h4 {
+        font-size: 1rem;
+    }
+}
+/* .skill___item > img{
+    border-radius: 50%;
+} */
+
+/* .item__6 > img{
     width: 5rem;
 }
 .item__10 > img{
@@ -98,5 +153,5 @@
 .skill_wave{
     position: absolute;
     top: 0;
-}
+} */
 

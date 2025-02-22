@@ -25,6 +25,7 @@ import { Phrase } from "./components/info";
   return (
     <div className="App">
       <Navbar isScrolling={scrollHeight} />
+      {/* <Navbar /> */}
       <Cover />
       <section className="section__container">
         <About />
