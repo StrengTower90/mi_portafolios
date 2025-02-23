@@ -6,33 +6,51 @@
 }
 
 .info-container {
-    width: 100%;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  box-sizing: border-box;
+  background-color: var( --secundary-color );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  overflow: hidden;
+    /* width: 100%;
     height: 60vh;
     background-color: var( --secundary-color );
-    color: var( --text-color-info );
+    color: var( --text-color-info ); */
     /* margin-bottom: 100vh; */
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
   }
   
   .info {
-    width: 50%;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #d7c7c7;
+    border-radius: 20px;
+    /* width: 50%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 0 50px;
-    color: var( --phrase-color );
+    color: var( --phrase-color ); */
     /* outline: 3px solid #424242; */
-    box-shadow: 1px 1px 3px #222222;
+    /* box-shadow: 1px 1px 3px #222222;
     background-color: #ffffec;
     border-radius: 50px;
     z-index: 1;
-    
+     */
   }
 
   .info > h1 {
@@ -49,7 +67,25 @@
     /* transform: rotateY(180deg); */
   }
 
-  .info_blood-1{
+  .info_blood-1, .info_blood-2 {
+    position: absolute;
+    width: 50vw;
+    max-width: 1000px;
+  }
+
+  .info_blood-1 {
+    opacity: 0.45;
+    top: -50vh;
+    left: -10vw;
+  }
+
+  .info_blood-2 {
+    opacity: 0.3;
+    bottom: -50vh;
+    right: -20vw;
+  }
+
+  /* .info_blood-1{
     position: absolute;
     width: 70rem;
     top: -40rem;
@@ -61,16 +97,41 @@
     width: 70rem;
     bottom: -38rem;
     right: -38rem;
-}
+} */
   
-  @media only screen and (max-width: 960px) {
-    .info-container {
-      height: 200px;
-      width: 100%;
+  @media (max-width: 768px) {
+    .info {
+      width: 80%;
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    .info_blood-1, .info_blood-2 {
+      position: absolute;
+      width: 400vw;
     }
   
-    .info > h1 {
-      text-align: center;
-      font-size: 25px;
+    .info_blood-1 {
+      top: -5vh;
+      left: -10vw;
+    }
+  
+    .info_blood-2 {
+      bottom: -5vh;
+      right: -20vw;
     }
   }
+
+  @media (max-width: 480px) {
+    .info {
+      width: 90%;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .info h1 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    line-height: 1.4;
+  }
+

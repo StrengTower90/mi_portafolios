@@ -23,7 +23,7 @@ export const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if(emailRegex.test(e.target.value)) {
+    if(!emailRegex.test(formData.email)) {
       setEmailError("please, enter a valid email address");
       return;
     } else {
@@ -112,7 +112,6 @@ export const Footer = () => {
         
       
        <div className="footer-sns">
-        <div className="design-by">&copy;Luis Escalante</div>
         <div className="sns-links">
           <a href="https://www.linkedin.com/in/luis-escalante-25667133a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin linkedin"></i>
@@ -124,6 +123,9 @@ export const Footer = () => {
             <i className="fab fa-facebook facebook"></i>
           </a>
         </div>
+      </div>
+      <div className="created-by">
+        <div className="design-by">&copy;Luis Escalante</div>
       </div>
     </footer>
     

@@ -3,6 +3,7 @@
 }
 
 .phrase_container{
+    /* overflow: hidden; */
     width: 100%;
     height: 60vh;
     position: relative;
@@ -16,22 +17,96 @@
 }
 
 .phrase{
-    width: 50%;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #d7c7c7;
+    border-radius: 20px;
+    /* width: 50%;
     height: 50%;
-    display: flex;
+    display: flex; */
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center;
     flex-wrap: wrap;
     padding: 0 50px;
-    color: var( --phrase-color );
+    color: var( --phrase-color ); */
     /* outline: 3px solid #424242; */
-    box-shadow: 1px 1px 3px #222222;
+    /* box-shadow: 1px 1px 3px #222222;
     background-color: #ffffec;
     border-radius: 50px;
-    z-index: 1;
+    z-index: 1; */
+}
+.phrase_blood-1, .phrase_blood-2 {
+    position: absolute;
+    width: 50vw; /*makes suer it covers the entire viewport */
+    max-width: 1000px; /* Prevent excessive scaling */
 }
 
-.phrase_blood-1{
+.phrase_blood-1 {
+    opacity: 0.45;
+    top: -50vh;
+    left: -10vw
+}
+
+.phrase_blood-2 {
+    opacity: 0.3;
+    bottom: -50vh;
+    right: -20vw;
+}
+
+
+@media (max-width: 768px) {
+    .phrase {
+        width: 80%; /* Slightly smaller width */
+        padding: 15px; /* Less padding */
+        font-size: 1rem; /* Reduce text size */
+        /* border-radius: 20px; Less rounded corners */
+    }
+
+    .phrase_blood-1, .phrase_blood-2 {
+        position: absolute;
+        width: 400vw; /* Adjust size for smaller screens */
+    }
+
+    .phrase_blood-1 {
+        top: -5vh;
+        left: -10vh;
+    }
+
+    .phrase_blood-2 {
+        bottom: -5vh;
+        right: -15vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .phrase {
+        width: 90%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .phrase_blood-1, .phrase_blood-2 {
+        position: absolute;
+        width: 70vw;
+    }
+
+    .phrase_blood-1 {
+        top: 10;
+        left: 1;
+    }
+}
+
+.phrase h1 {
+    font-size: clamp(1.2rem, 5vw, 2rem);/* scales based on screen width */
+    line-height: 1.4;
+}
+
+
+/* .phrase_blood-1{
     position: absolute;
     width: 70rem;
     top: -40rem;
@@ -43,4 +118,4 @@
     width: 70rem;
     bottom: -38rem;
     right: -38rem;
-}
+} */
