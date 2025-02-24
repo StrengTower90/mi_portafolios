@@ -1,92 +1,93 @@
-:root {
-  --primary-color: #2a8776;
-  --secundary-color: #f2f1ed;
-  --fourth-color: #dad9d6;
-  --text-color-footer: #000;
-}
 
 .footer {
-    width: 100%;
-    min-height: 100vh; /* Allows scrolling in small devices */
-    background-color: var( --primary-color );
-    color: #fff;
-    padding-top: 100px;
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    /* gap: 10px; */
-    /* bottom: 0;
-    left: 0; */
-    grid-template-areas: 
-    "footer_inf footer_inf footer_form footer_form"
-    "footer_cont footer_cont footer_form footer_form"
-    "footer_cont footer_cont footer_form footer_form"
-    "footer_foot footer_foot footer_form footer_form"
-  }
-  
-  /* footer info */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "footer_inf footer_inf footer_form footer_form"
+  "footer_inf footer_inf footer_form footer_form"
+  "footer_foot footer_foot footer_form footer_form";
+  width: 100%;
+  min-height: 100vh; /* Allows scrolling in small devices */
+  background-color: var( --footer-color );
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.footer-info,
+.footer-contact,
+.footer-sns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* footer info */
   .footer-info {
     grid-area: footer_inf;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    font-size: 25px;
     text-align: center;
-    /* background-color: #007bff; */
-    /* width: 100%;
-    height: 100%; */
   }
-  
+
+  .footer-info > h1 {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+  }
+
+  .footer-info > p {
+    max-width: 600px;
+    line-height: 1.6;
+  }
   
   .footer-contact {
     grid-area: footer_cont;
-    font-size: 25px;
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* width: 100%; */
+    justify-content: center; */
     gap: 10px;
     align-items: center;
+  }
+
+  .footer-contact > h3 {
+    font-size: clamp(1rem, 2vw, 1.6rem);
   }
   
   .Form{
     grid-area: footer_form;
     width: 100%;
-    /* height: 100%; */
+    display: flex;
+    justify-content: center;
   }
 
   form{
     width: 80%;
+    height: auto;
     max-width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 12px;
-    /* gap: 30px; */
     background-color: rgba(0, 0, 0, 0.564);
   }
 
   .footer-sns {
     grid-area: footer_foot;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     gap: 10px;
     text-align: center;
-    /* margin: 0 auto;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; */
   }
-
-
 
   form > input, 
   form > textarea {
@@ -99,23 +100,8 @@
     background-color: rgba(255, 255, 255, 0.906);
   }
 
-  form > button {
-    all: unset;
-    margin-top: 25px;
-    width: 40%;
-    height: 50px;
-    font-size: 18px;
-    background-color: #0a66c2;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-
   form > input:nth-child(n+2) {
     margin-top: 25px;
-  }
-
-  form > button{
-    margin-top: 25px
   }
 
   form > p{
@@ -127,8 +113,7 @@
     width: 85%;
     height: 40px;
     border-radius: 5px;
-    /* box-shadow: 1px 1px 3px #222222; */
-    padding: 10px;
+    padding: 5px 10px;
     outline: 2px solid #ccc;
     color: #000;
     background-color: rgba(255, 255, 255, 0.906);
@@ -151,13 +136,15 @@
   }
 
   form > button{
+    all: unset;
+    margin-top: 12px;
     font-family: inherit;
-    background-color: #0a66c2;
-    box-shadow: 1px 1px 3px #222222;
+    background-color: #000;
     border-radius: 20px;
     width: 30%;
-    height: 55px;
-    font-size: 20px;
+    height: auto;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,10 +154,10 @@
 form > textarea {
     width: 85%;
     height: 40%;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.906);
-    outline: 1px solid #000;
-    padding: 10px;
+    outline: 2px solid #ccc;
+    padding: 20px 10px;
     color: #000;
     margin-top: 25px;
   }
@@ -179,14 +166,12 @@ form > textarea {
     outline: #0186de;
   }
   form > button:hover {
-    background-color: #004182;
+    background-color: #00000082;
   }
 
   
   .sns-links{
     display: flex;
-    /* flex-direction: row;
-    width: 100%; */
     justify-content: center;
     gap: 20px;
   }
@@ -197,76 +182,58 @@ form > textarea {
     font-size: 30px;
     color: #fff;
     transition: all 0.3s ease-out;
-    /* margin: 0 auto;
-    padding-bottom: 10px;
-    border-bottom: 4px solid transparent; */
   }
   
   .linkedin:hover,
   .twitter:hover,
   .facebook:hover {
-    /* border-color: #fff;
-    transition: all 0.3s ease-out; */
     border-bottom: 4px solid #fff;
   }
   
   .design-by {
-    font-size: 20px;
-    padding-left: 40px;
-    padding-bottom: 10px;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #000;
   }
 
   .created-by {
-    width: 100%;
-    /* background-color: #004182; */
+    grid-area: footer_crea;
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
-    /* padding-left: 10px; */
+    align-items: center;
+    background-color: #ccc;
   }
   
   @media only screen and (max-width: 960px) {
     .footer {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: auto;
       grid-template-areas: 
         "footer_inf"
         "footer_cont"
         "footer_form"
         "footer_foot";
         text-align: center;
-        padding-top: 100px;
         gap: 32px;
-        /* padding-bottom: 20px; */
-    }
-
-    .footer-info {
-      font-size: 20px;
-      /* padding: 20px; */
-      /* text-align: center;
-      padding: 0;
-      font-size: 20px; */
-    }
-  
-    .footer-contact {
-     font-size: 22px;
-     /* padding: 40px 0; */
+        padding: 50px 20px;
     }
 
     form {
       width: 90%;
       padding: 15px;
-      /* margin-bottom: 40px; */
+      margin-bottom: 40px;
     }
 
     form > button {
       width: 50%;
     }
 
-    /* .sns-links {
+    .sns-links {
       flex-direction: column;
       gap: 15px;
-    } */
+    }
 
     .linkedin,
     .twitter,
@@ -278,12 +245,8 @@ form > textarea {
       padding: 0;
     }
   
-    /* .footer-sns {
+    .footer-sns {
       grid-template-columns: 1fr;
       text-align: center;
     }
-  
-    .design-by {
-      padding: 0 0 40px 0;
-    } */
   }

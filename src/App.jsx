@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./styles.css";
 import "./App.css";
 import { Cover } from "./components/cover/Cover";
 import { Navbar } from "./components/navbar/Navbar";
@@ -8,6 +9,7 @@ import { Info } from "./components/info/Info";
 import { Footer } from "./components/footer/Footer";
 import { Skills } from "./components/skills/Skills";
 import { Phrase } from "./components/info";
+import CreatedBy from './components/created/CreatedBy.jsx';
 
 
  const App = () => {
@@ -34,7 +36,8 @@ import { Phrase } from "./components/info";
           <Phrase />   
           <Slider />
           <Info />
-          <Footer />          
+          <Footer /> 
+          <CreatedBy />         
         </section>            
       </section>      
     </div>

@@ -1,14 +1,12 @@
-:root{
-    --phrase-color: #424242;
-}
 
 .phrase_container{
     /* overflow: hidden; */
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     position: relative;
     box-sizing: border-box;
-    background-color: var( --secundary-color );
+    background-color: var( --secondary-color );
+    border-bottom: 3px solid var(--border-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,22 +21,10 @@
     padding: 40px;
     text-align: center;
     z-index: 2;
-    border: 1px solid #d7c7c7;
+    border: 2px solid #d7c7c7;
     border-radius: 20px;
-    /* width: 50%;
-    height: 50%;
-    display: flex; */
-    /* justify-content: center; */
-    /* align-items: center;
-    flex-wrap: wrap;
-    padding: 0 50px;
-    color: var( --phrase-color ); */
-    /* outline: 3px solid #424242; */
-    /* box-shadow: 1px 1px 3px #222222;
-    background-color: #ffffec;
-    border-radius: 50px;
-    z-index: 1; */
 }
+
 .phrase_blood-1, .phrase_blood-2 {
     position: absolute;
     width: 50vw; /*makes suer it covers the entire viewport */
@@ -101,21 +87,6 @@
 }
 
 .phrase h1 {
-    font-size: clamp(1.2rem, 5vw, 2rem);/* scales based on screen width */
+    font-size: clamp(1rem, 4.5vw, 2rem);/* scales based on screen width */
     line-height: 1.4;
 }
-
-
-/* .phrase_blood-1{
-    position: absolute;
-    width: 70rem;
-    top: -40rem;
-    left: -30rem;
-}
-
-.phrase_blood-2{
-    position: absolute;
-    width: 70rem;
-    bottom: -38rem;
-    right: -38rem;
-} */

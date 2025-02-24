@@ -28,7 +28,7 @@ export const Slider = () => {
 
   return (
     <section className="container" id="scroll_projects">
-       <ProjectsViews />
+       {/* <ProjectsViews /> */}
 
        <div className="carousel-title">
           <h1>Mis Proyectos</h1>

@@ -62,9 +62,9 @@ export const Footer = () => {
       <footer className="footer" id="scroll_footer">
           <div className="footer-info">
             <h1>Luis Manuel Escalante Coronado</h1>
-            <p>km 14, carr Norte, 2 km hacia el sur, Managua-Nicaragua</p>
-          </div>
-          <div className="footer-contact">
+            <p>km 14, carretera Norte, 2 km hacia el sur, Managua, Nicaragua</p>
+          {/* </div>
+          <div className="footer-contact"> */}
             <h3>Contactame</h3>
             <p>Y manos a la obra</p>
           </div>
@@ -123,9 +123,6 @@ export const Footer = () => {
             <i className="fab fa-facebook facebook"></i>
           </a>
         </div>
-      </div>
-      <div className="created-by">
-        <div className="design-by">&copy;Luis Escalante</div>
       </div>
     </footer>
     

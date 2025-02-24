@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #2a8776;
+    --secondary-color: #f2f1ed;
+    --tertiary-color: #ffffffef;
+    --skill-background-color: #fafdff;
+    --fourth-color: #dad9d6;
+    --footer-color: #1e6153;
+    --skill-text-color: #fff;
+    --text-section-title: #3e3c3c;
+    --border-color: #ddd;
+}
+
+body {
+    background-color: var(--secondary-color);
+}

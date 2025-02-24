@@ -1,27 +1,20 @@
-:root {
-  --primary-color: #2a8776;
-  --secundary-color: #f2f1ed;
-  --fourth-color: #dad9d6;
-  --text-color: #fff;
-}
 
 .container{
   width: 100%;
-  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  padding-bottom: 5rem;
+  padding: 3rem 0px ;
   overflow: hidden;
   position: relative;
-  background-color: var( --primary-color );
+  background-color: var(--secondary-color);
+  border-bottom: 3px solid var(--border-color);
   gap: 2rem;
 }
 
 .slide_background{
-  /* background-color: rgba(0, 0, 0, 0.306); */
-  /* z-index: 1; */
   gap: 10rem;
 }
 
@@ -43,26 +36,21 @@
 
 .carousel-container {
     width: 100%;
-    /* max-width: 1200px; Adjust for responsiveness */
     height: auto;
-    /* margin: 0 auto; */
     display: flex;
     position: relative;
     object-fit: contain;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* box-sizing: border-box; */
-    /* flex-direction: column; */
     border-radius: 30px;
-    /* background-color: rgba(0, 0, 0, 0.564); */
     z-index: 1;
   }
 
   
 
   .carousel-title > h1{
-    color: var( --text-color );
+    color: var( --text-section-title );
     font-size: 32px;
   }
 
@@ -72,16 +60,6 @@
     flex-direction: row;
     justify-content: flex-end;
   }
-
-  /* .carousel-inner > a{ */
-    /* width: 150px; */
-    /* height: 60px; */
-    /* background-color: #fff; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* border-radius: 50px; */
-   /* } */
 
  .git--button{
   background-color: #fff;
@@ -94,10 +72,8 @@
  }
 
  .github {
-  color: var( --text-color );
+  color: #fff;
   font-size: 3rem;
-  /* padding-bottom: 10px; */
-  /* border-bottom: 4px solid transparent; */
  }
 
 
@@ -110,7 +86,6 @@
 .slide-container {
   width: 100%;
   height: 500px; /* Adjust based on desired aspect ratio */
-  /* max-width: 800px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,25 +93,19 @@
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  background-color: white; /*Optional Background for padding Effect */
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
-  /* outline: 3px solid var( --text-color ); */
-  /* background-color: var( --text-color ); */
-  /* cursor: pointer; */
+  background-color: #fff; /*Optional Background for padding Effect */
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
 }
   
   .slide-container > img {
     width: 100%;
     height: 100%;
     object-fit: contain; /*Ensures all images maintain aspect ration */
-    /* transition: all 0.2s ease-in-out; */
   }
   
   .slide-container:hover img {
     transform: scale( 1.1 );
     opacity: 0.8;
-    /* display: flex;
-    align-items: center; */
   }
   
   .slide-desc {
@@ -145,30 +114,19 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    /* padding: 15px; */
     display: flex;
     gap: 15px;
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.546);
-    /* border-top-left-radius: 20px; */
-    /* max-width: 70%; */
-    /* z-index: 1; */
   }
   
   .slide-desc > span {
-    color: var( --text-color );
+    color: #fff;
     display: block;
     font-size: 20px;
     padding: 20px 0 20px 10px;
   }
-  
-  /* .BrainhubCarousel__container {
-     outline: 3px solid #083D77;
-     object-fit: scale-down;
-     padding-top: 0%;
-     padding-bottom: 0% !important;
-  } */
 
   .BrainhubCarousel{
     padding-top: 0;
