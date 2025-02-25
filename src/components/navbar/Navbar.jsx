@@ -12,12 +12,9 @@ export const Navbar = ({ isScrolling }) => {
    const { toTheTop } =  ScrollThem();
    
     useEffect(() => {
-      console.log("I'm in the Navbar component");
      SetShowMenu();
     }, [])
     
-
-
   return (
     <> 
      <nav className={`menu ${isScrolling > 20 ? "scrolling" : null}`}>
