@@ -13,6 +13,7 @@ export const Navbar = ({ isScrolling }) => {
    
     useEffect(() => {
      SetShowMenu();
+     
     }, [])
     
   return (
