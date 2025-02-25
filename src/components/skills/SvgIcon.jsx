@@ -9,7 +9,7 @@ const SvgIcon = ({ src, title }) => {
             ) : (
                 <h4>No SVG Available</h4>
             )}
-            <h4>{title}</h4>
+            <span>{title}</span>
         </div>
     )
 };

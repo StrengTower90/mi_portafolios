@@ -14,12 +14,16 @@
   
   .info {
     width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     max-width: 600px;
-    height: auto;
+    height: 30vh;
     padding: 40px;
     text-align: center;
     z-index: 2;
-    border: 1px solid #d7c7c7;
+    border: 3px solid #d7c7c7;
     border-radius: 20px;
   }
 
@@ -55,19 +59,6 @@
     right: -20vw;
   }
 
-  /* .info_blood-1{
-    position: absolute;
-    width: 70rem;
-    top: -40rem;
-    left: -30rem;
-}
-
-.info_blood-2{
-    position: absolute;
-    width: 70rem;
-    bottom: -38rem;
-    right: -38rem;
-} */
   
   @media (max-width: 768px) {
     .info {
@@ -95,6 +86,7 @@
   @media (max-width: 480px) {
     .info {
       width: 90%;
+      height: 10vh;
       padding: 10px;
       font-size: 0.9rem;
     }

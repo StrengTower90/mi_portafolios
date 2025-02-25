@@ -3,6 +3,7 @@ import califi from './img/formCalificaciones.PNG';
 import estilos from './img/EstilosCss.PNG';
 import gifExper from './img/gifExpertApp.PNG';
 import heroesSpa from './img/heroesSpaMain.PNG';
+import diplomaGenerator from './img/mobile-diploma-screemshot.png'
 
 
 export const imagenes = {
@@ -11,4 +12,5 @@ export const imagenes = {
     imgEstil: estilos,
     imgGif: gifExper,
     imgHeSpa:heroesSpa,   
+    diplomaGen: diplomaGenerator
 }

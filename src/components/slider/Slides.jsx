@@ -8,38 +8,60 @@ const slidesInfo = [
   {
     src:imagenes.imgTabla,
     alt: "tabla-dinamicas",
-    desc: "Tablas Dinamicas",
+    name: "Tablas Dinamicas",
+    desc: "JavaScript, CSS, and html",
+    isShowGitHub: false
   },
   {
     src: imagenes.imgCali,
     alt: "formulario_nota_final",
-    desc: "form Calcula nota final",
+    name: "form Calcula nota final",
+    desc: "Php, CSS, and HTML",
+    isShowGitHub: false
   },
   {
     src: imagenes.imgEstil,
     alt: "formato_de_estilo",
-    desc: "Tabla dinamica",
+    name: "Hojas de estilo",
+    desc: "CSS, HTML",
+    isShowGitHub: false
   },
   {
     src: imagenes.imgGif,
     alt: "GifExperApp",
-    desc: "Busca Experta imagnes Gif",
+    name: "Busca Experta imagnes Gif",
+    desc: "ReactJs, HTML, CSS, and JavaScript",
+    isShowGitHub: false
   },
   {
     src: imagenes.imgHeSpa,
     alt: "Heroes_spa",
-    desc: "Heroes Spa",
+    name: "Heroes Spa", 
+    desc: "ReactJs, HTML, CSS, JavaScript, and Material UI",
+    isShowGitHub: false
   },
+  {
+    src: imagenes.diplomaGen,
+    alt: "diploma_generator",
+    name: "Diploma Generator",
+    desc: "Expo, React Native, and, React Native Paper UI",
+    isShowGitHub: false
+  }
 ];
 
 export const Slides = slidesInfo.map((slide) => (
   <div className="slide-container">
     <img src={slide.src} alt={slide.alt} />
     <div className="slide-desc">
-      <span>{ slide.desc }</span>
-      <a href="https://github.com/StrengTower90?tab=repositories" target="_blank" rel="noreferrer">
+      <div className="slide-desc-text">
+      <span>{ slide.name }</span>
+      <span>{slide?.desc}</span>
+      </div>
+      {slide.isShowGitHub && (
+         <a href="https://github.com/StrengTower90?tab=repositories" target="_blank" rel="noreferrer">
          <i className="fab fa-github github"></i>
        </a> 
+      )}
     </div>
   </div>
 ));

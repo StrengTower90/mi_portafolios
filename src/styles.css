@@ -1,15 +1,18 @@
 :root {
     --primary-color: #2a8776;
     --secondary-color: #f2f1ed;
-    --tertiary-color: #ffffffef;
+    --tertiary-color: #2a8776;
+    --alternative-bg-color: #87872a;
     --skill-background-color: #fafdff;
     --fourth-color: #dad9d6;
     --footer-color: #1e6153;
     --skill-text-color: #fff;
     --text-section-title: #3e3c3c;
+    --secondary-text-title: #efe6e6;
     --border-color: #ddd;
+    --card-color: rgb(28, 28, 28, 0.3);
 }
 
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--footer-color);
 }

@@ -9,8 +9,7 @@
   padding: 3rem 0px ;
   overflow: hidden;
   position: relative;
-  background-color: var(--secondary-color);
-  border-bottom: 3px solid var(--border-color);
+  background-color: var(--tertiary-color);
   gap: 2rem;
 }
 
@@ -32,6 +31,7 @@
   justify-content: center;
   gap: 15px;
   z-index: 1;
+  color: white;
   }
 
 .carousel-container {
@@ -47,10 +47,8 @@
     z-index: 1;
   }
 
-  
-
   .carousel-title > h1{
-    color: var( --text-section-title );
+    color: var( --secondary-text-color );
     font-size: 32px;
   }
 
@@ -93,7 +91,8 @@
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  background-color: #fff; /*Optional Background for padding Effect */
+  background-color: var(--card-color);
+  /* background-color: #fff; Optional Background for padding Effect */
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
 }
   
@@ -109,23 +108,35 @@
   }
   
   .slide-desc {
+    display: flex;
     position: absolute;
     flex-direction: row;
+    align-items: center;
+    text-align: center;
     bottom: 0;
     right: 0;
     width: 100%;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.546);
+    gap: 20px;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.68);
   }
   
-  .slide-desc > span {
+  .slide-desc-text {
     color: #fff;
-    display: block;
-    font-size: 20px;
-    padding: 20px 0 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .slide-container span:first-of-type {
+    font-size: 23px;
+  }
+
+  .slide-desc-text span:last-of-type {
+    color: #fff;
+    font-size: 18px;
   }
 
   .BrainhubCarousel{
@@ -224,6 +235,16 @@
       /* bottom: 5px; */
       max-width: 100%;
     }
+
+    .slide-container span:first-of-type {
+      font-size: 20px;
+    }
+  
+    .slide-desc-text span:last-of-type {
+      color: #f5eded;
+      font-size: 16px;
+    }
+    
 
     .carousel-title h1 {
       font-size: 20px;

@@ -63,8 +63,8 @@ export const Footer = () => {
           <div className="footer-info">
             <h1>Luis Manuel Escalante Coronado</h1>
             <p>km 14, carretera Norte, 2 km hacia el sur, Managua, Nicaragua</p>
-          {/* </div>
-          <div className="footer-contact"> */}
+          </div>
+          <div className="footer-contact">
             <h3>Contactame</h3>
             <p>Y manos a la obra</p>
           </div>

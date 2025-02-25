@@ -4,8 +4,7 @@
     position: relative;
     padding-bottom: 5rem;
     overflow: hidden;
-    background-color: var(--secondary-color);
-    border-bottom: 3px solid var(--border-color);
+    background-color: var(--tertiary-color);
 }
 
 .skill__container{
@@ -17,18 +16,17 @@
     align-items: center;
     color: #424242;
     position: relative;
-    
+    /* z-index: 1000; */
 }
 
 .skill__templates{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
     align-content: center;
 }
-
 
 .skill_title{
     width: 80%;
@@ -39,10 +37,11 @@
     justify-content: center;
     text-align: center;
     gap: 15px;
-    color: var( --skill-section-title );
 }
+
 .skill_title > h1 {
     font-size: 32px;
+    color: var(--secondary-text-title);
 }
 
 .skill___item{
@@ -52,22 +51,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-color: var(--card-color);
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
     border-radius: 30px;
     padding: 10px;
     text-align: center;
-    /* z-index: 2; */
+    z-index: 2;
 }
 
-.skill___item > img{
-    width: 50px;
-    max-width: 35%;
+.skill___item > img {
+    width: 70px;
+    max-width: 45%;
     object-fit: cover;
 }
-.skill___item > h4{
+
+.skill___item > span{
     font-size: 1.2rem;
-    /* height: 50%; */
+    color: var(--secondary-text-title)
+}
+
+.skill___item:hover {
+    transform: scale(1.05); /* Slightly enlarge */
 }
 
 @media (max-width: 1024px) {
