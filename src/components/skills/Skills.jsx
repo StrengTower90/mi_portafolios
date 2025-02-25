@@ -6,6 +6,7 @@ import SvgIcon from './SvgIcon.jsx';
 
 
 export const Skills = () => {
+  console.log(SkillsIcons);
   return (
     <section className='all_skill_contain' id="scroll_skills">
       {/* <SkillViews />  */}
