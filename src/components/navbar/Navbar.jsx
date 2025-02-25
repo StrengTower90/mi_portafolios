@@ -23,7 +23,7 @@ export const Navbar = ({ isScrolling }) => {
      <nav className={`menu ${isScrolling > 20 ? "scrolling" : null}`}>
       <section className="menu_container">
         <div className="menu_logo" onClick={toTheTop}>
-          <h1 className="fa fa-arrow-circle-up"/>
+          <h1 className="fa fa-arrow-circle-up"> </h1>
         </div>
         
         <ul className="menu_links">
