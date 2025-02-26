@@ -7,7 +7,6 @@
 // import cSharpIcon from './icons/csharp.png';
 // import cssIcon from './icons/css-3.png';
 import mySql from './icons/mysql_icon.png';
-import djangoRest from './icons/djangorest.png';
 
 // import bootsTrapIcon from './icons/bootstrap.png';
 

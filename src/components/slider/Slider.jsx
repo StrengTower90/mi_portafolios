@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { Slides } from "./Slides";
-import { ProjectsViews } from "../views";
 import "./Slider.css";
 
 export const Slider = () => {
