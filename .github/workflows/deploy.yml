@@ -28,23 +28,21 @@ jobs:
           cache-dependency-path: package-lock.json 
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci # Changed from install to ci for strict package-lock.json usage
 
       - name: Build project
         run: |
          npm run build
-         echo "Build step completed"
+         echo "Build PATH"
+         ls -la build # Immediate verification of build folder
 
-      - name: Debug build folder
-        run: ls -la build || echo "Build folder not found!"
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/ # Ensure correct path
+          path: build # Remove trailing slash
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v3
