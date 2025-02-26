@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import { AboutViews } from "../views";
 import imgAbout from '../../assets/img/solutions.png'
 import imgStudy from '../../assets/img/studying.png';
 import imgConst from '../../assets/img/entrepreneur.png';
