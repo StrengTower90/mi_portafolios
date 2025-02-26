@@ -30,13 +30,22 @@ jobs:
           # cache-dependency-path: package-lock.json 
 
       - name: Install dependencies
-        run: npm install # Changed from install to ci for strict package-lock.json usage
+        run: npm ci # Changed from install to ci for strict package-lock.json usage
 
       - name: Build project
         run: |
          npm run build
-         echo "Build CONTENTS"
-         ls -la build 
+         echo "Checking build folder..."
+         ls -la build || echo "Build folder missing!"
+
+      - name: Verify Build Directory
+        run: |
+          if [ -d "build" ]; then
+            echo "Build directory exists"
+          else
+            echo "Buid directory NOT found!"
+            exit 1
+          fi
 
       - name: Initialize Pages
         uses: actions/configure-pages@v4
