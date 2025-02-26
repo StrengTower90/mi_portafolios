@@ -2,8 +2,7 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches:
-      - main 
+    branches: [main]
   workflow_dispatch:  # Allows manual trigger
 
 permissions: 
@@ -15,6 +14,9 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -25,7 +27,7 @@ jobs:
         with: 
           node-version: 18
           cache: npm
-          cache-dependency-path: package-lock.json 
+          # cache-dependency-path: package-lock.json 
 
       - name: Install dependencies
         run: npm install # Changed from install to ci for strict package-lock.json usage
@@ -33,16 +35,19 @@ jobs:
       - name: Build project
         run: |
          npm run build
-         echo "Build PATH"
-         ls -la build # Immediate verification of build folder
+         echo "Build CONTENTS"
+         ls -la build 
 
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v4
+      - name: Initialize Pages
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: "react"
 
-      - name: Upload Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build # Remove trailing slash
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v3
