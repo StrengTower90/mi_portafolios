@@ -4,12 +4,12 @@ on:
   push:
     branches:
       - main 
-  workflow_dispatch: 
+  workflow_dispatch:  # Allows manual trigger
 
 permissions: 
     contents: read
     pages: write
-    id-token: write
+    id-token: write # Ensure proper token permissions
 
 
 jobs:
@@ -24,13 +24,19 @@ jobs:
         uses: actions/setup-node@v4
         with: 
           node-version: 18
-          cache: npm 
+          cache: npm
+          cache-dependency-path: package-lock.json 
 
       - name: Install dependencies
         run: npm install
 
       - name: Build project
-        run: npm run build
+        run: |
+         npm run build
+         echo "Build step completed"
+
+      - name: Debug build folder
+        run: ls -la build || echo "Build folder not found!"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -38,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./build
+          path: build # Ensure correct path
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
