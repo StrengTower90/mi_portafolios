@@ -44,7 +44,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
+          name: github-pages # Explicitly name the artifact
           path: build # Ensure correct path
+
+      - name: List uploaded artifacts
+        run: ls -la ${{ runner.temp }}/_github_workflow/artifacts || echo "No artifacts found!"
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
