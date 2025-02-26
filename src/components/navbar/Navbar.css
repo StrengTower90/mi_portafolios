@@ -156,6 +156,7 @@
   @media (max-width: 800px){
     .menu_hamburguer {
       display: flex;
+      /* background-color: var(--secundary-color); */
       color:#222222e7;
     }
 
@@ -189,7 +190,7 @@
       top: 60px;
       right: 0;
       bottom: 0;
-      background-color: var(--secundary-color);
+      background-color: var(--secondary-color);
       overflow-y: auto;
       display: grid;
       grid-auto-rows: max-content;
@@ -228,8 +229,6 @@
       margin-left: auto;
       border-left: 1px solid #798499;
     }
-
-
 
     .menu_img{
       color: #000;

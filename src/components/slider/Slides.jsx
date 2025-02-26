@@ -49,8 +49,8 @@ const slidesInfo = [
   }
 ];
 
-export const Slides = slidesInfo.map((slide) => (
-  <div className="slide-container">
+export const Slides = slidesInfo.map((slide, index) => (
+  <div className="slide-container" key={index}>
     <img src={slide.src} alt={slide.alt} />
     <div className="slide-desc">
       <div className="slide-desc-text">

@@ -55,7 +55,8 @@
 
 .about-desc {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   text-align: center;

@@ -1,37 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { Slides } from "./Slides";
 import "./Slider.css";
 
 export const Slider = () => {
-  const [itemWidth, setItemWidth] = useState(800);
+  const [offset, setOffset] = useState(20);
+  const breakpoints = useMemo(() => ({
+    1200: { slidesPerPage: 1, itemWidth: 0.6 * window.innerWidth },
+    960: { slidesPerPage: 1, arrows: false, itemWidth: 0.8 * window.innerWidth },
+    600: { slidesPerPage: 1, arrows: false, itemWidth: 0.8 * window.innerWidth }
+  }), []);
 
   useEffect(() => {
-    const updateItemWidth = () => {
-      if (window.innerWidth < 600) {
-        setItemWidth(window.innerWidth * 0.9);
-      } else if (window.innerWidth < 960) {
-        setItemWidth(window.innerWidth * 0.8);
-      } else if (window.innerWidth < 1200) {
-        setItemWidth(window.innerWidth * 0.6) 
-      } else {
-        setItemWidth(800);
-      }
+    if (window.innerWidth <= 960 ) {
+      setOffset(8)
+    } else {
+      setOffset(20)
     }
-
-    updateItemWidth();
-    window.addEventListener("resize", updateItemWidth);
-    return () => window.removeEventListener("resize", updateItemWidth);
-  },[]);
+  }, []);
 
   return (
     <section className="container" id="scroll_projects">
-       {/* <ProjectsViews /> */}
-
        <div className="carousel-title">
           <h1>Mis Proyectos</h1>
-          {/* <hr /> */}
           </div>    
     
       <div className="carousel-container">    
@@ -41,26 +33,10 @@ export const Slider = () => {
         infinite
         animationSpeed={200}
         centered
-        offset={20}
-        itemWidth={itemWidth} /* Adjusted for responsiveness */
+        offset={offset}
+        itemWidth={800} /* Adjusted for responsiveness */
         slides={ Slides }
-        breakpoints={{
-          1200: {
-            slidesPerPage: 1,
-            // arrows: false,
-            itemWidth: "60vw", /* Adjusted */
-          },
-          960: {
-            slidesPerPage: 1,
-            arrows: false,
-            itemWidth: "80vw"
-          },
-          600: {
-            slidesPerPage: 1,
-            arrows: false,
-            itemWidth: "90vw"
-          }
-        }}
+        breakpoints={breakpoints}
        />
      </div>      
     </section>

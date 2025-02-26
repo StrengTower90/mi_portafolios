@@ -8,7 +8,7 @@ import imgConst from '../../assets/img/entrepreneur.png';
 export const About = () => {
   return (
     <section className="all_about_container">
-       <AboutViews />
+       {/* <AboutViews /> */}
       <div className="about-container" id="scroll_about">
       <div className="title_about">
         <h1>Sobre Mí</h1>
