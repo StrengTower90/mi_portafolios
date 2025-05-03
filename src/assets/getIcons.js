@@ -7,6 +7,7 @@
 // import cSharpIcon from './icons/csharp.png';
 // import cssIcon from './icons/css-3.png';
 import mySql from './icons/mysql_icon.png';
+import aspnet from './icons/aspnet-svgrepo-black.png'
 
 // import bootsTrapIcon from './icons/bootstrap.png';
 
@@ -47,8 +48,19 @@ export const SkillsIcons = {
     },
     django: {
         title: 'Django Rest',
-        // src: djangoRest
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+    },
+    csharp: {
+        title: 'C Sharp',
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+    },
+    netCoreApi: {
+        title: 'ASP.NET CORE API',
+        src: aspnet
+    },
+    netCoreMvc: {
+        title: 'ASP.NET CORE MVC',
+        src: aspnet
     },
     git: {
         title: 'Git',
