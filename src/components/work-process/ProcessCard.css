@@ -1,0 +1,47 @@
+.process-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 12px rgba(42, 135, 118, 0.056);
+    overflow: hidden;
+}
+
+.process-card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.process-card-title h3 {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    font-weight: 500;
+    color: var(--text-section-title);
+}
+
+.process-card-title span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: var(--fourth-color);
+}
+
+.process-card p {
+    font-size: clamp(13px, 2.5vw, 14px);
+    line-height: 1.6;
+    font-weight: 100;
+    text-align: center;
+    color: var(--text-section-title);
+    margin-top: 1rem;
+}

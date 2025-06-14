@@ -2,29 +2,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;  
+  /* font-family: "Roboto", sans-serif;   */
+  /* font-family: "Poopins", sans-serif; */
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   scroll-margin: 40px;
 }
 
-.section__container{ 
+.section__container {
   z-index: 1;
 }
 
 
-.App{
+.App {
   position: relative;
-   /* background-color: #30505c !important; */
   background-repeat: no-repeat;
   background-size: 5rem;
   background-position: 5rem 50rem;
   overflow: hidden;
 }
 
+.header-container {
+  position: relative;
+  overflow-y: hidden;
+}
 
-.middle_container{
+.middle_container {
   position: relative;
   overflow: hidden;
 }
 
-    
+/* .cover_bloud {
+  width: 60vw;
+  position: absolute;
+  top: -20rem;
+  left: -10rem;
+  transform: rotateX(50deg);
+} */
+/* .cover_bloud {
+  width: 60vw;
+  position: absolute;
+  top: -5rem;
+  left: -10rem;
+  transform: rotateX(50deg);
+  z-index: 4;
+}
+
+.cover_bloud--right {
+  width: 40vw;
+  position: absolute;
+  top: -6rem;
+  right: 0rem;
+  transform: rotateX(30deg);
+  z-index: 4;
+} */

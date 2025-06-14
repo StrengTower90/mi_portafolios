@@ -4,18 +4,17 @@ import "./App.css";
 import { Cover } from "./components/cover/Cover";
 import { Navbar } from "./components/navbar/Navbar";
 import { About } from "./components/about/About";
-import { Slider } from "./components/slider/Slider";
-import { Info } from "./components/info/Info";
-import { Footer } from "./components/footer/Footer";
 import { Skills } from "./components/skills/Skills";
-import { Phrase } from "./components/info";
+import { Projects } from "./components/slider/Projects.jsx";
+import { Process } from "./components/work-process/Process.jsx";
+import { Contact } from './components/contacto/Contact.jsx';
 import CreatedBy from './components/created/CreatedBy.jsx';
 
 
- const App = () => {
+const App = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
 
-   const handleScroll = () => {
+  const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollHeight(position);
   };
@@ -26,20 +25,20 @@ import CreatedBy from './components/created/CreatedBy.jsx';
 
   return (
     <div className="App">
-      <Navbar isScrolling={scrollHeight} />
-      {/* <Navbar /> */}
-      <Cover />
+      <div className="header-container">
+        <Navbar isScrolling={scrollHeight} />
+        <Cover />
+      </div>
       <section className="section__container">
         <About />
         <section className="middle_container">
           <Skills />
-          <Phrase />   
-          <Slider />
-          <Info />
-          <Footer /> 
-          <CreatedBy />         
-        </section>            
-      </section>      
+          <Projects />
+          <Process />
+          <Contact />
+          <CreatedBy />
+        </section>
+      </section>
     </div>
   );
 };

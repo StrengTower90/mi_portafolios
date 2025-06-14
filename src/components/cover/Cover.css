@@ -1,37 +1,32 @@
 .heroe_container {
-  height: 100vh;
   position: relative;
+  height: auto;
+  padding: 9rem 0;
+  min-height: 100vh;
+  /* width: 90%; */
   display: flex;
   flex-direction: column;
-  background-color: #2a8776;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #2a8776 15%, var(--footer-color) 85%);
   z-index: 1;
-  padding: 2rem;
 }
 
 .cover-container {
   flex-basis: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
 }
-
-/* .video {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-  } */
 
 .cover_title {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  /* margin: auto 0 auto 10rem; */
   box-sizing: border-box;
   z-index: 2;
   text-align: left;
@@ -39,24 +34,64 @@
 }
 
 .cover_title h1 {
-  color: white;
-  font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
+  color: #FFFF;
+  font-size: clamp(1.7rem, 5vw, 3rem);
+  font-weight: 500;
   margin: 0;
 }
 
 .cover_title p {
   margin-top: 1px;
   color: white;
-  font-size: clamp(1.5rem, 2vw, 32rem); /* Responsive font size */
+  font-size: clamp(0.4rem, 2vw, 1.4rem);
+  font-weight: 300;
+}
+
+.cover_title .cover_headline {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  color: #FFFF;
+  text-align: justify;
+  margin-top: 1.5rem;
+}
+
+.video-background {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  /* padding-inline: 5rem; */
+}
+
+.video-background video {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  min-width: 100%;
+  min-height: 100%;
+  /* transform: translate(-50%, -50%); */
+  object-fit: contain;
 }
 
 .cover_img {
-  filter: brightness(1.2);
-  mix-blend-mode: multiply;
-  width: 40%;
-  max-width: 400px;
+  /* filter: brightness(1.4); */
+  /* mix-blend-mode: multiply; */
+  width: 30%;
+  max-width: 500px;
   height: auto;
-  /* margin-top: 400px; */
+  object-fit: cover;
+  margin: auto 0;
+  z-index: 2;
+}
+
+.lottie-area {
+  width: 40%;
+  max-width: 500px;
+  height: auto;
   object-fit: cover;
   margin: auto 0;
   z-index: 2;
@@ -68,49 +103,42 @@
   left: 0;
   width: 100%;
   height: 25vh;
-  /* transform: rotateY(180deg); */
 }
 
 .cover_bloud {
   width: 60vw;
   position: absolute;
-  top: -20rem;
-  left: -10rem;
-  transform: rotateX(50deg);
+  top: -8rem;
+  left: -3rem;
+  transform: rotateX(120deg);
+  z-index: 1;
 }
 
 .cover_bloud--right {
   width: 40vw;
   position: absolute;
-  top: -10rem;
-  right: -10rem;
+  top: 20rem;
+  right: -20rem;
   transform: rotateX(30deg);
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .cover-container {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem 5rem;
+  }
+  
+  .heroe_container {
+    height: 100vh;
+    padding: 5rem 5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .heroe_container{
-    height: auto;
-    min-height: 100vh;
-    padding: 4rem 1rem;
-  }
-
-  .cover-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    /* justify-content: center; */
-  }
-
   .cover_title {
-    /* margin: 10rem 2rem 0 2rem;
-    flex-basis: 100%; */
-    /* outline: 1px solid black; */
     max-width: 80%;
-  }
-
-  .cover_title h1 {
-    font-size: 2.5rem;
   }
 
   .cover_title p {
@@ -118,27 +146,25 @@
   }
 
   .cover_img {
-    /* display: none; */
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .lottie-area {
     width: 80%;
     max-width: 300px;
     height: auto;
   }
 
   .cover_bloud,
-  .cover_bloud--right{
+  .cover_bloud--right {
     width: 30vw;
   }
 
-  /* .cover_bloud--right {
-    width: 40rem;
-    top: -10rem;
-    right: -20rem;
-  } */
-
-.wave{
-  /* bottom: -8.5rem; */
-  bottom: -5vw;
-  height: 20vh;
-}
+  .wave {
+    bottom: -5vw;
+    height: 20vh;
+  }
 
 }

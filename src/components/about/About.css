@@ -1,7 +1,3 @@
-::root {
-  --color-image: linear-gradient(to top, #F37C74 80%, #f7c542 20%);
-}
-
 .all_about_container {
   box-sizing: border-box;
   width: 100%;
@@ -10,99 +6,111 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding: 2rem 1rem;
-  /* border-bottom: 3px solid var(--border-color); */
+  padding-inline: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
-
 
 .about-container {
   flex-basis: 90%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
 
 .title_about {
   text-align: center;
   color: var(--text-section-title);
-  /* color: #424242; */
+  max-width: 85%;
+  margin-bottom: 1.5rem;
 }
 
-.title_about h1 {
-  font-size: 32px;
-  margin-bottom: 0.5rem;
-} 
+.title_about>h1 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
 
-.title_about hr {
-  width: 50%;
-  height: 2px;
-  color: #424242;
-  border: none;
-  margin: auto;
+.title_about>p {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  line-height: 1.6;
+  font-weight: 100;
+  color: var(--text-section-title);
+  text-align: center;
 }
 
 .about__template {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+  gap: clamp(0.5rem, 5vw, 2rem);
+  justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .about-desc {
+  position: relative;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255, 0.9);
-  max-width: 100%;
+  border-radius: 10px;
+  border-bottom: 5px solid var(--primary-color);
+  background-color: #ffff;
+  width: 100%;
+  max-width: 300px;
   z-index: 2;
+  overflow: hidden;
+
+  background-color: var(--card-color);
+  box-shadow: 0 2px 12px rgba(42, 135, 118, 0.056);
 }
 
 .about-desc:hover {
-  transform: scale(1.05);
+  transform: translateY(-15px);
+  transition: transform .8s;
+  box-shadow: 0 2px 15px rgba(42, 135, 118, 0.162);
 }
 
 .about-desc-sub {
- flex: 1;
- max-width: 500px;
+  flex: 1;
+  max-width: 500px;
+  z-index: 2;
 }
 
 .about-desc-sub h3 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  font-weight: 500;
+  color: var(--text-section-title);
 }
 
 .about-desc-sub p {
-  font-size: 1.1rem;
+  font-size: clamp(13px, 2.5vw, 14px);
   line-height: 1.6;
-  text-align: justify;
-  margin-top: 0.5rem;
+  font-weight: 100;
+  color: var(--text-section-title);
+  margin-top: 1rem;
 }
 
-.about__img {
-  max-width: 250px;
-  width: 100%;
-  height: auto;
+.about-desc .about-icon {
+  font-size: clamp(65px, 25vw, 70px);
+  color: rgba(128, 128, 128, 0.788) ;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   border-radius: 10px;
 }
 
-.about_wave {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  border-bottom: 25px;
+.about-desc.desc--2 .about-icon.icon--2 {
+  font-size: clamp(55px, 25vw, 60px);
+}
+
+.about-desc:hover .about-icon {
+  color: var(--footer-color);
 }
 
 
@@ -110,56 +118,51 @@
   transform: scale(1.3);
 }
 
+.about-desc .about_wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 100px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .all_about_container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .title_about {
+    max-width: 50%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .about-container {
     width: 95%;
   }
 
-  .about__template{
-    gap: 2rem;
+  .title_about {
+    max-width: 90%;
   }
 
-  .about-desc{
+  .title_about p {
+    text-align: center;
+  }
+
+  .about-desc {
     flex-direction: column;
     text-align: center;
   }
 
-  .about__img{
-     width: 80%;
-     max-width: 200px;
-  }
-
-
-  .about-desc-sub{
+  .about-desc-sub {
     width: 100%;
     padding: 0 1rem;
   }
 
-  .about-desc-sub h3{
-    font-size: 1.5rem;
+  @media only screen and (max-width: 480px) {
+    .about-desc {
+      padding: 1rem;
+    }
   }
-
-  .about-desc-sub p{
-    font-size: 1rem;
-  }
-
-
-@media only screen and (max-width: 480px) {
-  .title_about h1 {
-    font-size: 20px;
-  }
-
-  .about-desc {
-    padding: 1rem;
-  }
-
-  .about-desc-sub h3 {
-    font-size: 1.3rem;
-  }
-
-  .about-desc-sub p {
-    font-size: 0.9rem;
-  }
-}
 }
