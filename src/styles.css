@@ -16,6 +16,18 @@
     --card-color: #ffffff;
     --secondary-contrast: #e9e2e2;
     --blood-color: #3b9684d4;
+
+    /* Cards colors */
+    --card-gentle-sage: #e0ebe8;
+    --card-muted-mint: #edf6f4;
+    --card-pale-sand: #f0eeea;
+    --card-soft-shadow: #dbe7e5;
+
+    /* contrast colors */
+    --accent-coral: #f4b6a6;
+    --accent-navy: #2c3e50;
+    --accent-aqua: #a7ded5;
+
 }
 
 body {

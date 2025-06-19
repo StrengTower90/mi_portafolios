@@ -55,7 +55,7 @@
 }
 
 .menu_logo .logo-1 {
-  color: var(--primary-much-darker);
+  color: var(--accent-navy);
   border-radius: 5px;
   font-weight: 800;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) 
@@ -68,11 +68,11 @@
 }
 
 .menu_logo .logo-1-scroll {
-  color: var(--primary-color);
+  color: var(--accent-navy);
 }
 
 .menu_logo .logo-2-scroll {
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .menu_logo img {
