@@ -23,12 +23,12 @@
 
 .scrolling 
 .menu_link {
-  color: var(--footer-color);
+  color: var(--accent-navy);
 }
 
 .scrolling 
 .menu_arrow {
-  color: var(--footer-color);
+  color: var(--accent-navy);
 }
 
 .scrolling .menu_img {
@@ -38,7 +38,7 @@
 .scrolling 
 .menu_logo 
 .arrow-top {
-  color: var(--footer-color);
+  color: var(--accent-navy);
 }
 
 .menu_logo {
@@ -172,8 +172,17 @@
   display: block;
   width: 25px;
   font-size: 15px;
-  filter: brightness(0) invert(1);
+  color: #ffff;
+  /* filter: brightness(0) invert(1); */
 }
+
+.scrolling 
+.menu_container
+.menu_hamburguer
+.menu_img {
+  color: var(--accent-navy)
+}
+
 
 @media screen and (min-width: 1024px) {
   .menu_arrow {
@@ -185,18 +194,7 @@
 @media (max-width: 1023px) {
   .menu_hamburguer {
     display: flex;
-    /* color:#ffff; */
   }
-
-  /* .menu_hamburguer > img{
-      color:#fff; 
-      text-decoration-color: #000;
-      text-decoration-color: #ffff;
-    } */
-
-  /* .menu_hamburguer .menu_img {
-      color: #ffff;
-    } */
 
   .menu_item {
     --clip: 0;
@@ -219,7 +217,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     overflow-y: auto;
     display: grid;
     grid-auto-columns: 1fr;
@@ -242,16 +240,9 @@
   }
 
 
-  /* .menu_arrow {
-    color: #222222e7 !important;
-    margin-left: auto;
-    margin-right: 20px;
-  } */
-
   .menu_link:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
   }
-
 
   .menu_nesting {
     display: grid;

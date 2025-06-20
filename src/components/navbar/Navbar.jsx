@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faArrowCircleUp, faAngleRight} from "@fortawesome/free-solid-svg-icons";
+import {faArrowCircleUp, faAngleRight, faBarsStaggered} from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { ScrollThem } from "./ScrollThem";
 import arrow from '../../assets/arrow.svg'
@@ -92,7 +92,8 @@ export const Navbar = ({ isScrolling }) => {
           <LanguageDropdown isScrolling={isScrolling} />
          
           <div className="menu_hamburguer">
-            <img src={ menu } className="menu_img" alt="menu"/>
+            {/* <img src={ menu } className="menu_img" alt="menu"/> */}
+            <FontAwesomeIcon icon={faBarsStaggered} className="menu_img" />
           </div>
         </section>
 

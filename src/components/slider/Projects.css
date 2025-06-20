@@ -21,7 +21,7 @@
 }
 
 .project-title > h1 {
-    color: var(--text-color);
+    color: var(--accent-navy-lighter);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 0.9rem;
@@ -31,7 +31,7 @@
     font-size: clamp(0.8rem, 2.5vw, 1rem);
     line-height: 1.6;
     font-weight: 100;
-    color: var(--text-color);
+    color: var(--accent-navy-more-lighter);
     text-align: center;
 }
 
@@ -48,6 +48,7 @@
 .project-container > h3 {
     font-size: clamp(0.5rem, 5vw, 1rem);
     font-weight: 400;
+    color: var(--accent-navy-more-lighter);
 }
 
 @media screen and (min-width: 1024px) {

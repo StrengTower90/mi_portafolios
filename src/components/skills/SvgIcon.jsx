@@ -1,15 +1,12 @@
 import React from "react";
 import "./Skills.css";
 
-const SvgIcon = ({ src, title, level, review }) => {
+const SvgIcon = ({ src, Svg, title, level, review }) => {
     return (
         <div className="skill___item">
           <div className="skill__img">
-              {src ? (
-                <img src={src} alt={title} />
-            ) : (
-                <h4>No SVG Available</h4>
-            )}
+              {src && <img src={src} alt={title} />}
+              {Svg && <Svg class="skill__svg" />}
           </div>
           <div className="skill__review">
             <span>{title}</span>

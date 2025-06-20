@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faLaptopCode, faServer, faCloudUploadAlt} from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode, faServer, faCloudUploadAlt } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import "./About.css";
@@ -27,7 +27,9 @@ export const About = () => {
         </div>
         <div className="about__template">
           <div className="about-desc desc--1" data-aos="fade-up">
-            <FontAwesomeIcon icon={faLaptopCode} className="about-icon" />
+            <div className="about-icon-circle">
+              <FontAwesomeIcon icon={faLaptopCode} className="about-icon" />
+            </div>
             <div className="about-desc-sub">
               <h3>{t('whatIDo.cardFront.title')}</h3>
               <p>
@@ -38,7 +40,9 @@ export const About = () => {
           </div>
 
           <div className="about-desc desc--2" data-aos="fade-up">
-            <FontAwesomeIcon icon={faServer} className="about-icon icon--2" /> 
+            <div className="about-icon-circle">
+              <FontAwesomeIcon icon={faServer} className="about-icon icon--2" />
+            </div>
             <div className="about-desc-sub">
               <h3>{t('whatIDo.cardBack.title')}</h3>
               <p>
@@ -49,7 +53,9 @@ export const About = () => {
           </div>
 
           <div className="about-desc desc--3" data-aos="fade-up">
-            <FontAwesomeIcon icon={faCloudUploadAlt} className="about-icon" /> 
+            <div className="about-icon-circle">
+              <FontAwesomeIcon icon={faCloudUploadAlt} className="about-icon" />
+            </div>
             <div className="about-desc-sub">
               <h3>{t('whatIDo.cardDeploy.title')}</h3>
               <p>

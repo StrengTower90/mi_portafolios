@@ -28,7 +28,7 @@
     },
     "skills": {
         "title": "Mis Habilidades",
-        "speech": "Dominio de un conjunto versátil de tecnologías para enfrentar cualquier desafío."
+        "speech": "Conosimientos solidos de un conjunto versátil de tecnologías para enfrentar cualquier desafío."
     },
     "projects": {
         "title": "Mis Proyectos",
@@ -71,7 +71,7 @@
             "cellPhone": {
                 "title": "Celular",
                 "icon": "phone",
-                "content": "+(505) 75408057 ; +(505) 55035937"
+                "content": "+(505) 75408057;  +(505) 55035937"
             }
         }
     }

@@ -22,7 +22,7 @@
 .process-card-title h3 {
     font-size: clamp(0.85rem, 2.5vw, 1rem);
     font-weight: 500;
-    color: var(--text-section-title);
+    color: var(--accent-navy-lighter);
 }
 
 .process-card-title span {

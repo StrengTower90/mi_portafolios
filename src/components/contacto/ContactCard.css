@@ -21,8 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: clamp(3rem, 4.5vw, 5rem);
-    height: clamp(3rem, 4.5vw, 5rem);
+    width: clamp(3rem, 4.5vw, 4rem);
+    height: clamp(3rem, 4.5vw, 4rem);
     border-radius: 50%;
     border: 1px solid var(--primary-darker);
     color: var(--primary-darker);
@@ -32,13 +32,13 @@
     font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
-.icon_circule:hover {
+/* .icon_circule:hover {
     background-color: var(--primary-color);
 }
 
 .icon_circule:hover .icon {
     color: #ffff;
-}
+} */
 
 .content {
     display: grid;
@@ -50,7 +50,7 @@
 .content > h3 {
     font-size: clamp(0.85rem, 2.5vw, 1rem);
     font-weight: 500;
-    color: var(--text-section-title);
+    color: var(--accent-navy-lighter);
     height: 20px;
     margin-bottom: 0.5rem;
 }

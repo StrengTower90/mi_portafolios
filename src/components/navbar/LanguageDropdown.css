@@ -20,7 +20,7 @@
 }
 
 .on-scroll {
-    color: var(--footer-color);
+    color: var(--accent-navy);
 }
 
 .off-scroll:hover {
@@ -28,7 +28,7 @@
 }
 
 .on-scroll:hover {
-    background-color: var(--secondary-contrast);
+    background-color: var(--secondary-color);
 }
 
 .dropdown-toggle > span {

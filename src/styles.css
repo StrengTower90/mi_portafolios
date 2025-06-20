@@ -1,11 +1,11 @@
 :root {
     --primary-color: #2a8776;
-    --primary-lighter: #3c9a89;
+    --primary-lighter: #3c9a8979;
     --primary-darker: #1f6a5e;
     --primary-much-darker: #145248;
     --secondary-color: #f9f9f9;
     --tertiary-color: #fcfcfc;
-    --skill-background-color: #f9f9f9;
+    --skill-background-color: #f1ebe5e9;
     --fourth-color: #dad9d6;
     --footer-color: #257a6b;
     --skill-text-color: #fff;
@@ -26,6 +26,8 @@
     /* contrast colors */
     --accent-coral: #f4b6a6;
     --accent-navy: #2c3e50;
+    --accent-navy-lighter: #364c62;
+    --accent-navy-more-lighter: #364c62f2;
     --accent-aqua: #a7ded5;
 
 }

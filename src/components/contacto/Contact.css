@@ -23,7 +23,7 @@
 }
 
 .contact_title h1 {
-    color: var(--text-color);
+    color: var(--accent-navy-lighter);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 600;
 }
@@ -36,8 +36,37 @@
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    /* place-items: center; */
-        
+    place-items: center;
+    place-items: center;   
+}
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    padding-top: clamp(1rem, 5vw, 1.5rem);
+}
+
+.contact_container .send-message {
+    all: unset;
+    cursor: pointer;
+    width: clamp(150px, 2.5vw, 200px);
+    height: auto;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    background-color: var(--accent-navy);
+    color: #ffff;
+    text-align: center;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+}
+
+.contact_container .send-message:hover {
+    background-color: var(--accent-navy-lighter);
 }
 
 @media screen and (min-width: 1024px) {

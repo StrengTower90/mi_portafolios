@@ -1,0 +1,75 @@
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}
+
+form label {
+    font-size: clamp(12px, 2.5vw, 14px);
+    font-weight: 500;
+    text-align: start;
+    color: var(--text-color);
+}
+
+form input,
+form textarea {
+    all: unset;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: 1px solid var(--fourth-color);
+    font-size: clamp(12px, 2.5vw, 14px);
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.form-inputs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.form-inputs .email {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.form-inputs .name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.message {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem
+}
+
+form button {
+    all: unset;
+    cursor: pointer;
+    outline: 2px solid var(--accent-navy);
+    width: clamp(100px, 2.5vw, 120px);
+    padding: 8px;
+    border-radius: 4px;
+    color: var(--accent-navy);
+    place-items: end;
+    justify-self: end;
+    margin-top: 0.5rem;
+    font-size: clamp(12px, 2.5vw, 14px);
+    text-align: center;
+}
+
+form button:hover {
+    background-color: var(--accent-navy);
+    color: #ffff;
+}

@@ -48,8 +48,7 @@ export const ContactCard = ({ title, icon, content }) => {
                 <div className="span_area">
                     {items.map((item, index) => (
                         <>
-                            <span key={index}>{item}</span>
-                            <br />
+                            <span key={index}>{item}</span> &nbsp;
                         </>
                     ))}
                 </div>

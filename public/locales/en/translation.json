@@ -28,7 +28,7 @@
     },
     "skills": {
         "title": "My Skills",
-        "speech": "Mastery of a versatile set of technologies to tackle any challenge."
+        "speech": "Solid knowledge of a versatile set of technologies to face any challenge."
     },
     "projects": {
         "title": "My Projects",
@@ -71,7 +71,7 @@
             "cellPhone": {
                 "title": "Cell Phone",
                 "icon": "phone",
-                "content": "+(505) 75408057 ; +(505) 55035937"
+                "content": "+(505) 75408057;  +(505) 55035937"
             }
         }
     }

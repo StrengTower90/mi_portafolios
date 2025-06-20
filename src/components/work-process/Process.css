@@ -8,7 +8,7 @@
     padding-inline: 1rem;    
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background: linear-gradient(to bottom, #f9f9f9,  #fcfcfc);
+    background: linear-gradient(to top, #f9f9f9,  #fcfcfc);
 }
 
 .process-title {
@@ -21,7 +21,7 @@
 }
 
 .process-title > h1 {
-    color: var(--text-color);
+    color: var(--accent-navy-lighter);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 600;
 }

@@ -29,14 +29,14 @@ export const Skills = () => {
         <p>{t('skills.speech')}</p>
       </div>        
         <div className="skill__templates">
-          {Object.entries(SkillsIcons).map(([key, {src, title, level }], index) => (
+          {Object.entries(SkillsIcons).map(([key, {src, svg, title, level }], index) => (
             <div
               key={key}
               data-aos="zoom-in"
               data-aos-delay={index * 100}
               ata-aos-anchor-placement="top-bottom"
             >
-              <SvgIcon src={src} title={title} level={level} />
+              <SvgIcon src={src} Svg={svg} title={title} level={level} />
             </div>
           ))}
             </div> 
