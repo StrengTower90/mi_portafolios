@@ -35,6 +35,7 @@
     border-radius: 50%;
     margin-right: 5px;
     background-color: var(--fourth-color);
+    color: var(--accent-navy-lighter);
 }
 
 .process-card p {

@@ -9,7 +9,7 @@
     --fourth-color: #dad9d6;
     --footer-color: #257a6b;
     --skill-text-color: #fff;
-    --text-section-title: #3e3c3c;
+    --text-section-title: #3e3c3ced;
     --text-color: #222222e7;
     --secondary-text-title: #efe6e6;
     --border-color: #ddd;
@@ -28,6 +28,7 @@
     --accent-navy: #2c3e50;
     --accent-navy-lighter: #364c62;
     --accent-navy-more-lighter: #364c62f2;
+    --accent-navy-more-lighter: #4a5f7372;
     --accent-aqua: #a7ded5;
 
 }

@@ -8,15 +8,12 @@ import './Contact.css';
 export const Contact = () => {
     const { t, i18n: { language } } = useTranslation();
     const [items, setItems] = useState(t('contact.items', { returnObjects: true }));
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         setItems(t('contact.items', { returnObjects: true }));
     }, [language]);
 
-    useEffect(() => {
-        console.log(Object.values(items));
-    }, [])
 
     return (
         <div className="contact_container" id="scroll_contact">
@@ -36,11 +33,20 @@ export const Contact = () => {
             </div>
 
             <button
-                className="send-message" 
+                className="send-message"
                 onClick={() => setIsModalOpen(true)}
             >
-                Send Message
+                {t('contact.button')}
             </button>
+
+            <div className="social-media">
+                <a href="https://www.linkedin.com/in/luis-escalante-25667133a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+                    <i className="fab fa-linkedin linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1DZFS5uPrr/" target="_blank" rel="noreferrer">
+                    <i className="fab fa-facebook facebook"></i>
+                </a>
+            </div>
 
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
                 <ContactForm />

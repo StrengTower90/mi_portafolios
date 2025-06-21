@@ -1,6 +1,18 @@
 .container-created {
     width: 100%;
-    padding: 10px;
+    height: 70px;
+    padding: 1rem;
     color: #000;
-    background-color: #ccc;
+    /* background: linear-gradient(to left, var(--primary-color), var(--footer-color)); */
+    background-color: var(--fourth-color);
+    display: flex;
+}
+
+.container-created span {
+    color: var(--accent-navy);
+    font-size: small;
+    font-weight: 300;
+    margin: auto;
+    margin-inline: clamp(0.2rem, 6vw, 20rem);
+    /* align-items: center; */
 }

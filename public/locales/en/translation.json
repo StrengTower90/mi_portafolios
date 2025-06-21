@@ -57,6 +57,7 @@
     },
     "contact": {
         "title": "Contact Me",
+        "button": "Send Message",
         "items": {
             "address": {
                 "title": "Address",

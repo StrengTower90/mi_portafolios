@@ -69,7 +69,37 @@ form button {
     text-align: center;
 }
 
+form button .button-text {
+    margin: auto;
+}
+
 form button:hover {
     background-color: var(--accent-navy);
     color: #ffff;
+}
+
+form button:disabled {
+    background-color: var(--border-color);
+    color: #999;
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: 1px solid var(--fourth-color)
+}
+
+.contact-greetings {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+    gap: 2rem;
+    margin: auto;
+    color: var(--accent-navy-lighter);
+    font-size: large;
+}
+
+.contact-greetings .greetings-icon {
+    font-size: 8rem;
+    color: var(--primary-color);
 }

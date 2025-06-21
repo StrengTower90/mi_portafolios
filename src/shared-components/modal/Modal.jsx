@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import "./Modal.css";
 
 const Modal = ({ isOpen, onClose, children }) => {
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => document.body.style.overflow = "";
+    }, [isOpen]);
+        
+
     if (!isOpen) return null;
 
     return (

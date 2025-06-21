@@ -57,6 +57,7 @@
     },
     "contact": {
         "title": "Contactame ",
+        "button": "Enviar Mensaje",
         "items": {
             "address": {
                 "title": "Direccion",

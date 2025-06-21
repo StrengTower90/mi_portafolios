@@ -1,14 +1,20 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faFaceSmileBeam } from "@fortawesome/free-solid-svg-icons";
+import SpinningCircle from "../../shared-components/loaders/spinning-circle/SpinningCircle";
 import "./ContactForm.css";
 
 export const ContactForm = () => {
     const [state, handleSubmit] = useForm("xzzgabzo");
 
     if (state.succeeded) {
-        return <p>Thanks for Joining!</p>
+        return (
+            <div className="contact-greetings">
+                <FontAwesomeIcon icon={faFaceSmileBeam} className="greetings-icon" />
+                !Thanks for Join Us
+            </div>
+        )
     }
 
     return (
@@ -17,7 +23,7 @@ export const ContactForm = () => {
             <div className="form-inputs">
                 <div className="email">
                     <label htmlFor="email">
-                        Email: 
+                        Email:
                     </label>
                     <input
                         id="email"
@@ -43,11 +49,12 @@ export const ContactForm = () => {
             </div>
             <div className="message">
                 <label htmlFor="message">
-                    Message: 
+                    Message:
                 </label>
                 <textarea
                     id="message"
                     name="message"
+                    rows={4}
                 />
                 <ValidationError
                     prefix="Message"
@@ -57,8 +64,12 @@ export const ContactForm = () => {
             </div>
 
             <button type="submit" disabled={state.submitting}>
-                Submit &nbsp;
-                <FontAwesomeIcon icon={faPaperPlane} />
+                {state.submitting && <SpinningCircle size={25} />}
+                {!state.submitting &&
+                    <div className="button-text">
+                        Submit &nbsp;
+                        <FontAwesomeIcon icon={faPaperPlane} />
+                    </div>}
             </button>
         </form>
     )

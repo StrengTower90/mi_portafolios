@@ -7,10 +7,10 @@
     overflow: hidden;
     width: 100%;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem;   
     padding-inline: 3rem;
 
-    background-color: var(--secondary-color);
+    background: linear-gradient(to bottom, var(--tertiary-color), var(--secondary-color));
 }
 
 .contact_title {
@@ -36,8 +36,9 @@
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+    margin-top: clamp(0, 2.5vw, 0.8rem);
     place-items: center;
-    place-items: center;   
+    place-items: center;
 }
 
 .contact-form {
@@ -54,19 +55,41 @@
 .contact_container .send-message {
     all: unset;
     cursor: pointer;
-    width: clamp(150px, 2.5vw, 200px);
-    height: auto;
+    width: clamp(130px, 2.5vw, 155px);
+    height: clamp(28px, 2.5vw, 33px);
     padding: 10px;
     border-radius: 4px;
-    margin-top: 1.5rem;
-    background-color: var(--accent-navy);
+    margin-top: 2.5rem;
+    background-color: var(--accent-navy-lighter);
     color: #ffff;
     text-align: center;
     font-size: clamp(0.85rem, 2.5vw, 1rem);
 }
 
 .contact_container .send-message:hover {
-    background-color: var(--accent-navy-lighter);
+    background-color: var(--accent-navy);
+}
+
+.social-media {
+    /* margin-top: 2rem; */
+    position: absolute;
+    top: 88%;
+    left: -29%;
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a > i {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    color: var(--primary-color);
+}
+
+.social-media a:hover i {
+    color: var(--primary-darker);
 }
 
 @media screen and (min-width: 1024px) {
@@ -78,5 +101,11 @@
 
     .contact_title {
         max-width: 60%;
+    }
+
+    .social-media {
+        top: 70%;
+        left: -32%;
+        flex-direction: column;
     }
 }

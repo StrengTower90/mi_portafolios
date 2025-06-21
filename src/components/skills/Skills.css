@@ -53,7 +53,7 @@
     font-size: clamp(0.8rem, 2.5vw, 1rem);
     line-height: 1.6;
     font-weight: 100;
-    color: var(--accent-navy-more-lighter);
+    color: var(--text-section-title);
     text-align: center;
 }
 
@@ -113,7 +113,7 @@
 
 
 .skill___item .skill__review > span {
-    font-size: clamp(10px, 2.5vw, 13px);
+    font-size: clamp(11px, 2.5vw, 13px);
     font-weight: 400;
     color: var(--text-section-title)
 }
