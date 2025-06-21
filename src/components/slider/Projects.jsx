@@ -27,11 +27,11 @@ export const Projects = () => {
         ))}
       </div>
 
-      {/* <Slider
+      <Slider
         slides={projects.map((p) => ({ ...p, image: p.src }))}
         isOpen={true}
         // onClose={() => }
-      /> */}
+      />
     </section>
 
   );
