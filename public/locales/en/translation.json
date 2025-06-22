@@ -32,7 +32,22 @@
     },
     "projects": {
         "title": "My Projects",
-        "speech": "I love building in my free time, it’s how I learn and create with curiosity and passion."
+        "speech": "I love building in my free time, it’s how I learn and create with curiosity and passion.",
+        "gifExpertApp": {
+            "title": "Expert Search for GIF Images",
+            "description": "Search for GIF images by matching titles and descriptions related to series, anime, and sci-fi movies.",
+            "tools": "Developed with (ReactJs, Html, Css, and Material UI)"
+        },
+        "heroesVerse": {
+            "title": "Heroes Verse",
+            "description": "Heroes Verse lets users log in to browse detailed profiles of iconic DC and Marvel characters.",
+            "tools": "Developed with (JavaScript, ReactJs, HTML, CSS, y Bootstrap)"
+        },
+        "diplomaGenerator": {
+            "title": "Diploma Generator",
+            "description": "An app in development that lets users upload diploma templates, select print sizes, and customize text to create personalized diplomas.",
+            "tools":"Developed with (JavaScript, ReactJs, React Native, Expo, React Native Paper)"
+        }
     },
     "process": {
         "title": "My Process of Work",

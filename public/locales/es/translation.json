@@ -32,7 +32,22 @@
     },
     "projects": {
         "title": "Mis Proyectos",
-        "speech": "Me encanta crear en mi tiempo libre, es mi forma de aprender y dar vida a ideas con curiosidad y pasión."
+        "speech": "Me encanta crear en mi tiempo libre, es mi forma de aprender y dar vida a ideas con curiosidad y pasión.",
+        "gifExpertApp": {
+            "title": "Busqueda Experta imagenes Gif",
+            "description": "Search for GIF images by matching titles and descriptions related to series, anime, and sci-fi movies.",
+            "tools": "Desarrollado con (JavaScript, ReactJs, HTML, CSS)"
+        },
+        "heroesVerse": {
+            "title": "Heroes Verse",
+            "description": "HeroesVerse permite a los usuarios iniciar sesión para explorar perfiles detallados de los icónicos personajes de DC y Marvel.",
+            "tools": "Desarrollado con (JavaScript, ReactJs, HTML, CSS, y Bootstrap)"
+        },
+        "diplomaGenerator": {
+            "title": "Diploma Generator",
+            "description": "Una app en desarrollo que permite subir plantillas de diplomas, elegir tamaños de impresión y personalizar texto para crear diplomas personalizados.",
+            "tools":"Desarrollado con (JavaScript, ReactJs, React Native, Expo, React Native Paper)"
+        }
     },
     "process": {
         "title": "Mi Proceso de Trabajo",
