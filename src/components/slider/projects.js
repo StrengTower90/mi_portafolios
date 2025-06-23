@@ -6,20 +6,23 @@ export const projects = [
         alt: "gifExpertApp",
         title: "Busca Experta imagnes Gif",
         desc: "ReactJs, HTML, CSS, and JavaScript",
-        isShowGitHub: false,
+        isShowCode: true,
+        isOpen: true
       },
       {
         src: imagenes.imgHeSpa,
         alt: "heroesVerse",
         title: "Heroes Verse", 
         desc: "ReactJs, HTML, CSS, JavaScript, and Material UI",
-        isShowGitHub: false
+        isShowCode: true,
+        isOpen: true
       },
       {
         src: imagenes.diplomaGen,
         alt: "diplomaGenerator",
         title: "Diploma Generator",
         desc: "Expo, React Native, and, React Native Paper UI",
-        isShowGitHub: false
+        isShowCode: false,
+        isOpen: false
       }
 ];

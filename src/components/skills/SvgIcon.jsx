@@ -6,7 +6,7 @@ const SvgIcon = ({ src, Svg, title, level, review }) => {
         <div className="skill___item">
           <div className="skill__img">
               {src && <img src={src} alt={title} />}
-              {Svg && <Svg class="skill__svg" />}
+              {Svg && <Svg className="skill__svg" />}
           </div>
           <div className="skill__review">
             <span>{title}</span>

@@ -24,7 +24,7 @@
 
 .contact_title h1 {
     color: var(--accent-navy-lighter);
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-size: clamp(1.1rem, 2.7vw, 1.5rem);
     font-weight: 600;
 }
 
@@ -71,12 +71,10 @@
 }
 
 .social-media {
-    /* margin-top: 2rem; */
     position: absolute;
-    top: 88%;
-    left: -29%;
+    top: 95%;
+    right: 15%;
     display: flex;
-    flex-direction: column;
     width: 68%;
     gap: 1rem;
     align-items: center;
@@ -85,11 +83,13 @@
 
 .social-media a > i {
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-    color: var(--primary-color);
+    color: var(--accent-navy-more-lighter);
+    transform: scale(1);
+    transition: transform 0.3s ease forwards;
 }
 
 .social-media a:hover i {
-    color: var(--primary-darker);
+    transform: scale(1.2);
 }
 
 @media screen and (min-width: 1024px) {
@@ -104,8 +104,7 @@
     }
 
     .social-media {
-        top: 70%;
-        left: -32%;
-        flex-direction: column;
+        top: 90%;
+        right: -28%;
     }
 }

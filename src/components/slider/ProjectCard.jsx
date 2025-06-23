@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faMagnifyingGlass, faEye } from "@fortawesome/free-solid-svg-icons";
-import "./Slide.css"
+import "./ProjectCard.css"
 
-const Slide = ({ title, desc, src, alt, url, handleGetProject }) => {
+const ProjectCard = ({ title, desc, src, alt, url, handleGetProject }) => {
     return (
         <div className="card-area">
             <div className="project-card">
@@ -19,4 +19,4 @@ const Slide = ({ title, desc, src, alt, url, handleGetProject }) => {
     )
 };
 
-export default Slide;
+export default ProjectCard;

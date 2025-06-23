@@ -6,7 +6,7 @@
 }
 
 .card-area h3 {
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
     font-weight: 500;
     margin-top: 0.6rem;
     color: var(--text-color);

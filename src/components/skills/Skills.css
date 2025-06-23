@@ -43,14 +43,14 @@
 }
 
 .skill_title > h1 {
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-size: clamp(1.1rem, 2.7vw, 1.5rem);
     font-weight: 600;
-    color: var(--accent-navy-lighter);
     margin-bottom: 0.9rem;
+    color: var(--accent-navy-lighter);
 }
 
 .skill_title > p {
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.9vw, 1rem);
     line-height: 1.6;
     font-weight: 100;
     color: var(--text-section-title);
@@ -113,7 +113,7 @@
 
 
 .skill___item .skill__review > span {
-    font-size: clamp(11px, 2.5vw, 13px);
+    font-size: clamp(12px, 1.8vw, 14px);
     font-weight: 400;
     color: var(--text-section-title)
 }
@@ -188,16 +188,12 @@
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .all_skill_contain {
         height: auto;
-    }
-
-    .skill_title>h1 {
-        font-size: 20px;
     }
 
     .skill___item>h4 {
         font-size: 1rem;
     }
-}
+} */

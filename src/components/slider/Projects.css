@@ -22,13 +22,13 @@
 
 .project-title > h1 {
     color: var(--accent-navy-lighter);
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-size: clamp(1.1rem, 2.7vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 0.9rem;
 }
 
 .project-title > p {
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.9vw, 1rem);
     line-height: 1.6;
     font-weight: 100;
     color: var(--text-section-title);

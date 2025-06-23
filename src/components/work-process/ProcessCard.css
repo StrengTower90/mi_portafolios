@@ -20,7 +20,7 @@
 }
 
 .process-card-title h3 {
-    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
     font-weight: 500;
     color: var(--accent-navy-lighter);
 }
@@ -39,7 +39,7 @@
 }
 
 .process-card p {
-    font-size: clamp(13px, 2.5vw, 14px);
+    font-size: clamp(13px, 1.9vw, 14px);
     line-height: 1.6;
     font-weight: 100;
     text-align: center;

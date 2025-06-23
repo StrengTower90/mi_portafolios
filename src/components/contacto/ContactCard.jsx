@@ -7,9 +7,6 @@ export const ContactCard = ({ title, icon, content }) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        const string = 'hola ; Hello';
-
-
         if (content.includes(';')) {
             setItems(
                 content.split(';')
@@ -31,11 +28,6 @@ export const ContactCard = ({ title, icon, content }) => {
         return icons[keyName];
     }
 
-    useEffect(() => {
-        console.log(items);
-        console.log(icon)
-    }, [items]);
-
     return (
         <div className="contact_card">
             <div className="icon_area">
@@ -47,9 +39,9 @@ export const ContactCard = ({ title, icon, content }) => {
                 <h3>{title}</h3>
                 <div className="span_area">
                     {items.map((item, index) => (
-                        <>
-                            <span key={index}>{item}</span> &nbsp;
-                        </>
+                        <React.Fragment key={item}>
+                            <span>{item}</span> &nbsp;
+                        </React.Fragment>
                     ))}
                 </div>
             </div>

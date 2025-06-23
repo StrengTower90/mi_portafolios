@@ -3,22 +3,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faCircleArrowRight, faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import "./Slider.css";
 
-const Slider = ({ slides, title, description, tools, isOpen, onClose }) => {
+const Slider = ({ slides, title, description, tools, isOpen, onClose, isShowCode, isOpenApp }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-        console.log(slides)
-    }, [slides]);
+        if (isOpen) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = ""
+        }
+
+        return () => document.body.style.overflow = ""
+    }, [isOpen]);
+
 
     if (!isOpen) return null;
 
+
     const handlePrev = () => {
-        // setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-        setCurrentIndex((prev) => (prev === 0 ? 0 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? prev : prev - 1));
     }
 
     const handleNext = () => {
-        // setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
         setCurrentIndex((prev) => (prev === slides.length - 1 ? slides.length - 1 : prev + 1));
     }
 
@@ -53,6 +59,15 @@ const Slider = ({ slides, title, description, tools, isOpen, onClose }) => {
                     <p>{tools}</p>
                 </div>
             </div>
+            <div className="feedback-button">
+                {isShowCode && <button>Code</button>}
+                {isOpenApp && <button>Open</button>}
+            </div>
+
+            <div className="bottom-status">
+                <p>{`${currentIndex + 1} / ${slides?.length}`}</p>
+            </div>
+
             <button className="slider-button right" onClick={handleNext} disabled={currentIndex === slides.length - 1}>
                 <FontAwesomeIcon icon={faCircleArrowRight} />
             </button>

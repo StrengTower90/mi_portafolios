@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { projects } from "./projects";
 import { projectsSlides } from "../../utils/projectsSlides.js";
-import Slide from "./Slide";
+import ProjectCard from "./ProjectCard.jsx";
 import Slider from "../../shared-components/slider/Slider";
 import "./Projects.css";
 
@@ -14,10 +14,14 @@ export const Projects = () => {
   const handleGetProject = (selectedName) => {
     const info = t(`projects.${selectedName}`, { returnObjects: true });
     const slides = projectsSlides[selectedName];
+    const projProps = projects.find((item) => item.alt === selectedName);
+
 
     setProject({
       ...info,
-      slides: slides
+      slides: slides,
+      isShowCode: projProps.isShowCode,
+      isOpenApp: projProps.isOpen
     });
 
     setIsOpenSlider(true);
@@ -32,7 +36,7 @@ export const Projects = () => {
 
       <div className="project-container">
         {projects.map(({ title, src, alt, desc }) => (
-          <Slide
+          <ProjectCard
             key={title}
             title={title}
             src={src}
