@@ -22,7 +22,6 @@ const LanguageDropdown = ({ isScrolling }) => {
     };
 
     useEffect(() => {
-        console.log(i18n.language);
         const handleClickOutSide = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
                 setOpen(false);

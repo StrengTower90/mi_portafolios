@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import { ProcessCard } from './ProcessCard';
 import "./Process.css";
@@ -12,7 +12,7 @@ export const Process = () => {
             t('process.steps', 
             { returnObjects: true })
         );
-    }, [i18n.language]);
+    }, [i18n.language, t]);
 
     return (
         <div className='process-container' id='scroll_process'>

@@ -12,7 +12,7 @@ export const Contact = () => {
 
     useEffect(() => {
         setItems(t('contact.items', { returnObjects: true }));
-    }, [language]);
+    }, [language, t]);
 
 
     return (
