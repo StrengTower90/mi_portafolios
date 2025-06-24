@@ -8,7 +8,7 @@
     },
     "header": {
         "greetings": "Hello, I'm Luis Escalante",
-        "speech": "FullStack Developer specialized in scalable web and mobile solutions Bringing ideas to life through clean code and user-focused design Frontend & Backend Developer with a passion for building great experiences"
+        "speech": "Full-Stack Developer passionate about delivering scalable web and mobile solutions. Bringing ideas to life through clean code and user-centered design. Frontend & Backend Developer passionate about creating great experiences."
     },
     "whatIDo": {
         "title": "What I do",
@@ -46,12 +46,12 @@
         "diplomaGenerator": {
             "title": "Diploma Generator",
             "description": "An app in development that lets users upload diploma templates, select print sizes, and customize text to create personalized diplomas.",
-            "tools":"Developed with (JavaScript, ReactJs, React Native, Expo, React Native Paper)"
+            "tools": "Developed with (JavaScript, ReactJs, React Native, Expo, React Native Paper)"
         }
     },
     "process": {
         "title": "My Process of Work",
-        "steps" : {
+        "steps": {
             "stepOne": {
                 "title": "Understand the Idea",
                 "speech": "I take time to understand the goal, the user’s needs, and the core problem. This sets the direction for everything that follows."
@@ -80,7 +80,7 @@
                 "content": "Managua, Nicaragua.  Km 14 carretera norte 2km sur"
             },
             "email": {
-                 "title": "Email",
+                "title": "Email",
                 "icon": "envelope",
                 "content": "l.escalante.c90@gmail.com"
             },

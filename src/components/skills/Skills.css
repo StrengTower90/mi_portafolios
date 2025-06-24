@@ -14,7 +14,8 @@
 }
 
 .skill__container {
-    max-width: 90%;
+    width: 90%;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -42,14 +43,14 @@
     margin-bottom: 1.5rem;
 }
 
-.skill_title > h1 {
+.skill_title>h1 {
     font-size: clamp(1.1rem, 2.7vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 0.9rem;
     color: var(--accent-navy-lighter);
 }
 
-.skill_title > p {
+.skill_title>p {
     font-size: clamp(0.8rem, 1.9vw, 1rem);
     line-height: 1.6;
     font-weight: 100;
@@ -95,24 +96,24 @@
 }
 
 
-.skill___item .skill__img > img {   
+.skill___item .skill__img>img {
     width: clamp(50px, 2.5vw, 80px);
     max-width: 60%;
     aspect-ratio: 1/1;
-    object-fit:scale-down;
+    object-fit: scale-down;
     color: var(--primary-color);
 }
 
-.skill___item .skill__img .skill__svg {   
+.skill___item .skill__img .skill__svg {
     width: clamp(50px, 2.5vw, 80px);
     max-width: 60%;
     aspect-ratio: 1/1;
-    object-fit:scale-down;
+    object-fit: scale-down;
     color: var(--primary-color);
 }
 
 
-.skill___item .skill__review > span {
+.skill___item .skill__review>span {
     font-size: clamp(12px, 1.8vw, 14px);
     font-weight: 400;
     color: var(--text-section-title)

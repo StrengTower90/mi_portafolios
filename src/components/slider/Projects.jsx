@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { projects } from "./projects";
 import { projectsSlides } from "../../utils/projectsSlides.js";
@@ -8,24 +8,29 @@ import "./Projects.css";
 
 export const Projects = () => {
   const { t } = useTranslation();
-  const [ isOpenSlider, setIsOpenSlider ] = useState(false);
+  const [isOpenSlider, setIsOpenSlider] = useState(false);
   const [project, setProject] = useState(null);
 
   const handleGetProject = (selectedName) => {
-    const info = t(`projects.${selectedName}`, { returnObjects: true });
-    const slides = projectsSlides[selectedName];
-    const projProps = projects.find((item) => item.alt === selectedName);
+    if (selectedName !== null) {
 
+      const info = t(`projects.${selectedName}`, { returnObjects: true });
+      const slides = projectsSlides[selectedName];
+      const projProps = projects.find((item) => item.alt === selectedName);
 
-    setProject({
-      ...info,
-      slides: slides,
-      isShowCode: projProps.isShowCode,
-      isOpenApp: projProps.isOpen
-    });
+      setProject({
+        ...info,
+        slides: slides,
+        isShowCode: projProps.isShowCode,
+        isOpenApp: projProps.isOpen,
+        codeUrl: projProps.codeUrl,
+        publishUrl: projProps.publishUrl
+      });
 
-    setIsOpenSlider(true);
+      setIsOpenSlider(true);
+    }
   };
+
 
   return (
     <section className="container" id="scroll_projects">
@@ -41,7 +46,6 @@ export const Projects = () => {
             title={title}
             src={src}
             alt={alt}
-            desc={desc}
             handleGetProject={handleGetProject}
           />
         ))}

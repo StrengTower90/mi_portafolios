@@ -8,7 +8,7 @@
     },
     "header": {
         "greetings": "Hola, soy Luis Escalante",
-        "speech": "Desarrollador Full-Stack especializado en soluciones web y móviles escalables Transformo ideas en software funcional y atractivo Desarrollador frontend y backend con pasión por la experiencia del usuario"
+        "speech": "Desarrollador Full-Stack con pasión por ofrecer soluciones web y móviles escalables. Doy vida a las ideas mediante código limpio y diseño centrado en el usuario. Desarrollador Frontend y Backend apasionado por crear grandes experiencias."
     },
     "whatIDo": {
         "title": "Que hago",
@@ -35,7 +35,7 @@
         "speech": "Me encanta crear en mi tiempo libre, es mi forma de aprender y dar vida a ideas con curiosidad y pasión.",
         "gifExpertApp": {
             "title": "Busqueda Experta imagenes Gif",
-            "description": "Search for GIF images by matching titles and descriptions related to series, anime, and sci-fi movies.",
+            "description": "Busca imágenes GIF mediante coincidencias en títulos y descripciones relacionadas con series, anime y películas de ciencia ficción.",
             "tools": "Desarrollado con (JavaScript, ReactJs, HTML, CSS)"
         },
         "heroesVerse": {

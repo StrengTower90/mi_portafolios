@@ -2,8 +2,6 @@
   position: relative;
   height: auto;
   padding: 9rem 0;
-  min-height: 100vh;
-  /* width: 90%; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -13,12 +11,13 @@
 
 .cover-container {
   flex-basis: 100%;
-  height: 100%;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin: 0 auto;
   gap: 1rem;
   padding: 0;
 }
@@ -30,7 +29,7 @@
   box-sizing: border-box;
   z-index: 2;
   text-align: left;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .cover_title h1 {
@@ -43,7 +42,7 @@
 .cover_title p {
   margin-top: 1px;
   color: white;
-  font-size: clamp(0.4rem, 2vw, 1.4rem);
+  font-size: clamp(0.4rem, 2vw, 9rem);
   font-weight: 300;
 }
 
@@ -62,24 +61,17 @@
   height: auto;
   overflow: hidden;
   background-color: var(--primary-color);
-  /* padding-inline: 5rem; */
 }
 
 .video-background video {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
   mix-blend-mode: overlay;
   opacity: 0.5;
   min-width: 100%;
   min-height: 100%;
-  /* transform: translate(-50%, -50%); */
   object-fit: contain;
 }
 
 .cover_img {
-  /* filter: brightness(1.4); */
-  /* mix-blend-mode: multiply; */
   width: 30%;
   max-width: 500px;
   height: auto;
@@ -108,9 +100,9 @@
 .cover_bloud {
   width: 60vw;
   position: absolute;
-  top: -8rem;
-  left: -3rem;
-  transform: rotateX(120deg);
+  top: -25%;
+  left: 2%;
+  transform: rotateX(110deg);
   z-index: 1;
 }
 
@@ -127,11 +119,10 @@
   .cover-container {
     flex-direction: row;
     justify-content: space-around;
-    padding: 5rem 5rem;
+    padding: 1.2rem 5rem;
   }
-  
+
   .heroe_container {
-    height: 100vh;
     padding: 5rem 5rem;
   }
 }

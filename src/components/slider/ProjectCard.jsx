@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faMagnifyingGlass, faEye } from "@fortawesome/free-solid-svg-icons";
 import "./ProjectCard.css"
 
-const ProjectCard = ({ title, desc, src, alt, url, handleGetProject }) => {
+const ProjectCard = ({ title, src, alt, handleGetProject }) => {
     return (
         <div className="card-area">
             <div className="project-card">
