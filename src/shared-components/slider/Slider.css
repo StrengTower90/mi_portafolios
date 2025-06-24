@@ -1,0 +1,212 @@
+.slider-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.slider-all-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    z-index: 2
+}
+
+.slider-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 3%;
+    background: transparent;
+    color: #ffff;
+    border: none;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    cursor: pointer;
+}
+
+.slider-all-container .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    align-self: center;
+    background: linear-gradient(135deg, #348f7e, #0f3b32);
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    padding-top: 2rem;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    align-self: center;
+}
+
+.slider-all-container .slider-container .description-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    z-index: 1;
+    border-top-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffff;
+}
+
+.slider-all-container .slider-container .description-bar h3 {
+    font-size: clamp(12px, 2.5vw, 16px);
+    font-weight: 500;
+}
+
+.description-bar p {
+    font-size: clamp(9px, 2.5vw, 13px);
+}
+
+.slider-all-container .bottom-status {
+    position: absolute;
+    top: 91%;
+    right: 50%;
+    transform: translateX(50%);
+    color: white;
+    text-align: center;
+}
+
+.slider-all-container .bottom-status > p {
+    font-size: 15px;
+}
+
+.slider-button {
+    position: absolute;
+    top: 90%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    z-index: 3;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-button:hover {
+    transform: scale(1.2);
+}
+
+.slider-button:disabled {
+    color: rgba(128, 128, 128, 0.844);
+    transform: scale(1);
+}
+
+.slider-button.left {
+    left: 5%;
+}
+
+.slider-button.right {
+    right: 5%
+}
+
+.slider-all-container .feedback-button {
+    position: absolute;
+    top: 1rem;
+    left: 15%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.7rem;
+    z-index: 3;
+}
+
+.slider-all-container .feedback-button a {
+    all: unset;
+    color: white;
+    width: clamp(45px, 5vw ,60px);
+    padding: 5px;
+    font-size: clamp(12px, 1.5vw, 14px);
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.slider-all-container .feedback-button a:hover {
+    background-color: white;
+    color: var(--accent-navy);
+}
+
+
+@media screen and (min-width: 1281px) {
+    .slider-wrapper {
+        height: 80vh;
+    }
+
+    .slider-container .description-bar {
+        width: 75%;
+    }
+
+    .slider-all-container .bottom-status {
+        bottom: 5%;
+        right: 17%;
+    }
+
+    .slider-all-container .bottom-status > p {
+        font-size: 17px;
+    }
+
+    .slider-button {
+        top: 50%;
+    }
+
+    .slider-close {
+        right: 4%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .slider-button.left {
+        left: 5%;
+    }
+
+    .slider-button.right {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .slider-all-container .feedback-button {
+        left: 5%;
+    }
+}

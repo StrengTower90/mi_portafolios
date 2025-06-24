@@ -1,0 +1,110 @@
+.contact_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;   
+    padding-inline: 3rem;
+
+    background: linear-gradient(to bottom, var(--tertiary-color), var(--secondary-color));
+}
+
+.contact_title {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact_title h1 {
+    color: var(--accent-navy-lighter);
+    font-size: clamp(1.1rem, 2.7vw, 1.5rem);
+    font-weight: 600;
+}
+
+.contact_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    gap: clamp(15px, 2.5vw, 20px);
+    justify-content: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: clamp(0, 2.5vw, 0.8rem);
+    place-items: center;
+    place-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    padding-top: clamp(1rem, 5vw, 1.5rem);
+}
+
+.contact_container .send-message {
+    all: unset;
+    cursor: pointer;
+    width: clamp(130px, 2.5vw, 155px);
+    height: clamp(28px, 2.5vw, 33px);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 2.5rem;
+    background-color: var(--accent-navy-lighter);
+    color: #ffff;
+    text-align: center;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+}
+
+.contact_container .send-message:hover {
+    background-color: var(--accent-navy);
+}
+
+.social-media {
+    position: absolute;
+    top: 95%;
+    right: 15%;
+    display: flex;
+    width: 68%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a > i {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    color: var(--accent-navy-more-lighter);
+    transform: scale(1);
+    transition: transform 0.3s ease forwards;
+}
+
+.social-media a:hover i {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 1024px) {
+    .contact_container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-inline: 1rem;
+    }
+
+    .contact_title {
+        max-width: 60%;
+    }
+
+    .social-media {
+        top: 90%;
+        right: -28%;
+    }
+}

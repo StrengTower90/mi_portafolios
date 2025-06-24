@@ -1,0 +1,66 @@
+.contact_card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.icon_area {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon_circule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(3rem, 4.5vw, 4rem);
+    height: clamp(3rem, 4.5vw, 4rem);
+    border-radius: 50%;
+    border: 1px solid var(--primary-darker);
+    color: var(--primary-darker);
+}
+
+.icon_circule .icon {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* .icon_circule:hover {
+    background-color: var(--primary-color);
+}
+
+.icon_circule:hover .icon {
+    color: #ffff;
+} */
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+}
+
+.content > h3 {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 500;
+    color: var(--accent-navy-lighter);
+    height: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.span_area {
+      height: 60px;
+}
+
+.content .span_area span {
+    width: 100%;
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+    font-weight: 200;
+}

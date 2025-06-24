@@ -1,16 +1,37 @@
 :root {
     --primary-color: #2a8776;
-    --secondary-color: #f2f1ed;
-    --tertiary-color: #2a8776;
-    --alternative-bg-color: #87872a;
-    --skill-background-color: #fafdff;
+    --primary-lighter: #3c9a8979;
+    --primary-darker: #1f6a5e;
+    --primary-much-darker: #145248;
+    --secondary-color: #f9f9f9;
+    --tertiary-color: #fcfcfc;
+    --skill-background-color: #f1ebe5e9;
     --fourth-color: #dad9d6;
-    --footer-color: #1e6153;
+    --footer-color: #257a6b;
     --skill-text-color: #fff;
-    --text-section-title: #3e3c3c;
+    --text-section-title: #3e3c3ced;
+    --text-color: #222222e7;
     --secondary-text-title: #efe6e6;
     --border-color: #ddd;
-    --card-color: rgb(28, 28, 28, 0.3);
+    --card-color: #ffffff;
+    --secondary-contrast: #e9e2e2;
+    --blood-color: #3b9684d4;
+
+    /* Cards colors */
+    --card-gentle-sage: #e0ebe8;
+    --card-muted-mint: #edf6f4;
+    --card-pale-sand: #f0eeea;
+    --card-soft-shadow: #dbe7e5;
+
+    /* contrast colors */
+    --accent-coral: #f4b6a6;
+    --accent-navy: #2c3e50;
+    --accent-navy-dark: #29394a;
+    --accent-navy-lighter: #364c62;
+    --accent-navy-more-lighter: #364c62;
+    --accent-navy-more-lighter: #4a5f7372;
+    --accent-aqua: #4ebeab;
+
 }
 
 body {

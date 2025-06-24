@@ -1,0 +1,94 @@
+{
+    "navbar": {
+        "option1": "What I do",
+        "option2": "Skills",
+        "option3": "Projects",
+        "option4": "Work Process",
+        "option5": "Contact"
+    },
+    "header": {
+        "greetings": "Hello, I'm Luis Escalante",
+        "speech": "Full-Stack Developer passionate about delivering scalable web and mobile solutions. Bringing ideas to life through clean code and user-centered design. Frontend & Backend Developer passionate about creating great experiences."
+    },
+    "whatIDo": {
+        "title": "What I do",
+        "speech": "I’m a passionate FullStack Developer focused on building clean, efficient, and scalable solutions. Here’s how I can help:",
+        "cardFront": {
+            "title": "Frontend Development",
+            "speech": "I build responsive, accessible interfaces using React, React Native, or .NET (MVC/Razor), focusing on performance and great user experience. I use reusable components and modern libraries for fast, effective solutions."
+        },
+        "cardBack": {
+            "title": "Backend Development",
+            "speech": "Designing and developing RESTful APIs using Python (Django Rest Framework) and .NET Core. Managing data models, business logic, and secure authentication systems. Integrating databases like PostgreSQL, MySQL, and SQL Server."
+        },
+        "cardDeploy": {
+            "title": "Deployment & DevOps",
+            "speech": "Deploying applications to platforms like Vercel, Netlify, and Azure. Using Git and GitHub for version control and collaborative development. Automating workflows with GitHub Actions for CI/CD pipelines and reliable deployments."
+        }
+    },
+    "skills": {
+        "title": "My Skills",
+        "speech": "Solid knowledge of a versatile set of technologies to face any challenge."
+    },
+    "projects": {
+        "title": "My Projects",
+        "speech": "I love building in my free time, it’s how I learn and create with curiosity and passion.",
+        "gifExpertApp": {
+            "title": "Expert Search for GIF Images",
+            "description": "Search for GIF images by matching titles and descriptions related to series, anime, and sci-fi movies.",
+            "tools": "Developed with (ReactJs, Html, Css, and Material UI)"
+        },
+        "heroesVerse": {
+            "title": "Heroes Verse",
+            "description": "Heroes Verse lets users log in to browse detailed profiles of iconic DC and Marvel characters.",
+            "tools": "Developed with (JavaScript, ReactJs, HTML, CSS, y Bootstrap)"
+        },
+        "diplomaGenerator": {
+            "title": "Diploma Generator",
+            "description": "An app in development that lets users upload diploma templates, select print sizes, and customize text to create personalized diplomas.",
+            "tools": "Developed with (JavaScript, ReactJs, React Native, Expo, React Native Paper)"
+        }
+    },
+    "process": {
+        "title": "My Process of Work",
+        "steps": {
+            "stepOne": {
+                "title": "Understand the Idea",
+                "speech": "I take time to understand the goal, the user’s needs, and the core problem. This sets the direction for everything that follows."
+            },
+            "stepTwo": {
+                "title": "Plan & Structure",
+                "speech": "I outline the flow, define key features, and choose the right tools. This helps avoid confusion later and keeps development smooth."
+            },
+            "stepThree": {
+                "title": "Build with Care",
+                "speech": "I code with attention to detail, aiming for clarity, scalability, and performance — always keeping the user experience in mind."
+            },
+            "stepFour": {
+                "title": "Test, Launch, Improve",
+                "speech": "I test thoroughly, get feedback, and launch. After release, I monitor, adjust, and improve the project to keep it sharp and functional."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact Me",
+        "button": "Send Message",
+        "items": {
+            "address": {
+                "title": "Address",
+                "icon": "location",
+                "content": "Managua, Nicaragua.  Km 14 carretera norte 2km sur"
+            },
+            "email": {
+                "title": "Email",
+                "icon": "envelope",
+                "content": "l.escalante.c90@gmail.com"
+            },
+            "cellPhone": {
+                "title": "Cell Phone",
+                "icon": "phone",
+                "content": "+(505) 75408057;  +(505) 55035937"
+            }
+        }
+    }
+}

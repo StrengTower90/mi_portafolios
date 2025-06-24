@@ -26,7 +26,6 @@
   text-align: center;
 }
 
-/* footer info */
   .footer-info {
     grid-area: footer_inf;
     height: 100%;

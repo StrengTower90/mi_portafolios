@@ -1,0 +1,94 @@
+{
+    "navbar": {
+        "option1": "Que hago",
+        "option2": "Habilidades",
+        "option3": "Proyectos",
+        "option4": "Proceso de trabajo",
+        "option5": "Contacto"
+    },
+    "header": {
+        "greetings": "Hola, soy Luis Escalante",
+        "speech": "Desarrollador Full-Stack con pasión por ofrecer soluciones web y móviles escalables. Doy vida a las ideas mediante código limpio y diseño centrado en el usuario. Desarrollador Frontend y Backend apasionado por crear grandes experiencias."
+    },
+    "whatIDo": {
+        "title": "Que hago",
+        "speech": "Soy un Desarrollador Full-Stack apasionado por crear soluciones limpias, eficientes y escalables. Esto es lo que puedo hacer por ti:",
+        "cardFront": {
+            "title": "Desarrollo frontend",
+            "speech": "Diseño interfaces responsivas y accesibles con React, React Native, .NET MVC o Razor Pages, siempre enfocado en rendimiento y experiencia de usuario. Integro componentes reutilizables y librerías modernas para soluciones rápidas."
+        },
+        "cardBack": {
+            "title": "Desarrollo backend",
+            "speech": "Construyo APIs RESTful utilizando Python (Django Rest Framework) y ASP.NET Core Diseño la lógica de negocio, estructuras de datos y sistemas de autenticación seguros. Trabajo con bases de datos como PostgreSQL, MySQL y SQL Server."
+        },
+        "cardDeploy": {
+            "title": "Despliegue y DevOps",
+            "speech": "Despliego aplicaciones en plataformas como Vercel, Netlify y Azure. Uso Git y GitHub para control de versiones y trabajo colaborativo. Automatizo flujos de trabajo con GitHub Actions, asegurando integraciones y despliegues continuos."
+        }
+    },
+    "skills": {
+        "title": "Mis Habilidades",
+        "speech": "Conosimientos solidos de un conjunto versátil de tecnologías para enfrentar cualquier desafío."
+    },
+    "projects": {
+        "title": "Mis Proyectos",
+        "speech": "Me encanta crear en mi tiempo libre, es mi forma de aprender y dar vida a ideas con curiosidad y pasión.",
+        "gifExpertApp": {
+            "title": "Busqueda Experta imagenes Gif",
+            "description": "Busca imágenes GIF mediante coincidencias en títulos y descripciones relacionadas con series, anime y películas de ciencia ficción.",
+            "tools": "Desarrollado con (JavaScript, ReactJs, HTML, CSS)"
+        },
+        "heroesVerse": {
+            "title": "Heroes Verse",
+            "description": "HeroesVerse permite a los usuarios iniciar sesión para explorar perfiles detallados de los icónicos personajes de DC y Marvel.",
+            "tools": "Desarrollado con (JavaScript, ReactJs, HTML, CSS, y Bootstrap)"
+        },
+        "diplomaGenerator": {
+            "title": "Diploma Generator",
+            "description": "Una app en desarrollo que permite subir plantillas de diplomas, elegir tamaños de impresión y personalizar texto para crear diplomas personalizados.",
+            "tools":"Desarrollado con (JavaScript, ReactJs, React Native, Expo, React Native Paper)"
+        }
+    },
+    "process": {
+        "title": "Mi Proceso de Trabajo",
+        "steps": {
+            "stepOne": {
+                "title": "Comprender la idea",
+                "speech": "Dedico tiempo a entender el objetivo, las necesidades del usuario y el problema central. Esto guía todo el proceso."
+            },
+            "stepTwo": {
+                "title": "Planificar y estructurar",
+                "speech": "Organizo el flujo, defino las funciones clave y selecciono las herramientas adecuadas. Así evito complicaciones y el desarrollo fluye mejor."
+            },
+            "stepThree": {
+                "title": "Construir con dedicación",
+                "speech": "Escribo código con atención al detalle, buscando claridad, escalabilidad y buen rendimiento, siempre pensando en la experiencia del usuario."
+            },
+            "stepFour": {
+                "title": "Probar, lanzar y mejorar",
+                "speech": "Pruebo a fondo, recojo comentarios y lanzo. Después del lanzamiento, sigo mejorando el proyecto para que funcione bien y se mantenga útil."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contactame ",
+        "button": "Enviar Mensaje",
+        "items": {
+            "address": {
+                "title": "Direccion",
+                "icon": "location",
+                "content": "Managua, Nicaragua.  Km 14 carretera norte 2km sur"
+            },
+            "email": {
+                 "title": "Correo",
+                "icon": "envelope",
+                "content": "l.escalante.c90@gmail.com"
+            },
+            "cellPhone": {
+                "title": "Celular",
+                "icon": "phone",
+                "content": "+(505) 75408057;  +(505) 55035937"
+            }
+        }
+    }
+}
