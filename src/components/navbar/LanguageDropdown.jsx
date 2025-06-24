@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCaretDown, faLanguage} from "@fortawesome/free-solid-svg-icons";
+import {faLanguage} from "@fortawesome/free-solid-svg-icons";
 import './LanguageDropdown.css';
 
 const LanguageDropdown = ({ isScrolling }) => {

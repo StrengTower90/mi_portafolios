@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faMagnifyingGlass, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./ProjectCard.css"
 
 const ProjectCard = ({ title, src, alt, handleGetProject }) => {

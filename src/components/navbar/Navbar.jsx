@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faArrowCircleUp, faAngleRight, faBarsStaggered} from "@fortawesome/free-solid-svg-icons";
+import {faAngleRight, faBarsStaggered} from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { ScrollThem } from "./ScrollThem";
-import arrow from '../../assets/arrow.svg'
-import menu from '../../assets/menu.svg'
-import logo from '../../assets/img/logo.png'
 import SetShowMenu from "../../helpers/JavaApp";
 import LanguageDropdown from "./LanguageDropdown";
 
